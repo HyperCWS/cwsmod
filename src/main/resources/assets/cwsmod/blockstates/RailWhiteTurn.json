@@ -1,0 +1,14 @@
+{
+    "variants": {
+        "shape=north_south": { "model": "cwsmod:RailWhiteTurn" },
+        "shape=east_west": { "model": "cwsmod:RailWhiteTurn", "y": 90 },
+        "shape=ascending_east": { "model": "cwsmod:RailWhiteTurn_ne", "y": 90 },
+        "shape=ascending_west": { "model": "cwsmod:RailWhiteTurn_sw", "y": 90 },
+        "shape=ascending_north": { "model": "cwsmod:RailWhiteTurn_ne" },
+        "shape=ascending_south": { "model": "cwsmod:RailWhiteTurn_sw" },
+        "shape=south_east": { "model": "cwsmod:RailWhiteTurn_turn" },
+        "shape=south_west": { "model": "cwsmod:RailWhiteTurn_turn", "y": 90 },
+        "shape=north_west": { "model": "cwsmod:RailWhiteTurn_turn", "y": 180 },
+        "shape=north_east": { "model": "cwsmod:RailWhiteTurn_turn", "y": 270 }
+    }
+}

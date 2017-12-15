@@ -1,0 +1,11 @@
+tile.RailWhiteTurn.name=White Turn Line
+tile.RailYellowThin.name=Thin Yellow Line
+tile.RailYellowThick.name=Thick Yellow Line
+tile.RailYellowDouble.name=Double Yellow Line
+tile.RailWhiteUp.name=Up White Arrow
+tile.RailWhiteDown.name=Down White Arrow
+tile.RailWhiteThin.name=Thin White Line
+tile.RailWhiteThick.name=Thick White Line
+tile.BBlock.name=Block of bitumen
+itemGroup.cws_btab=CWS Blocks
+itemGroup.cws_ltab=CWS Tool and Icons

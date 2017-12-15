@@ -1,0 +1,14 @@
+{
+    "variants": {
+        "shape=north_south": { "model": "cwsmod:RailYellowDouble" },
+        "shape=east_west": { "model": "cwsmod:RailYellowDouble", "y": 90 },
+        "shape=ascending_east": { "model": "cwsmod:RailYellowDouble_ne", "y": 90 },
+        "shape=ascending_west": { "model": "cwsmod:RailYellowDouble_sw", "y": 90 },
+        "shape=ascending_north": { "model": "cwsmod:RailYellowDouble_ne" },
+        "shape=ascending_south": { "model": "cwsmod:RailYellowDouble_sw" },
+        "shape=south_east": { "model": "cwsmod:RailYellowDouble_turn" },
+        "shape=south_west": { "model": "cwsmod:RailYellowDouble_turn", "y": 90 },
+        "shape=north_west": { "model": "cwsmod:RailYellowDouble_turn", "y": 180 },
+        "shape=north_east": { "model": "cwsmod:RailYellowDouble_turn", "y": 270 }
+    }
+}

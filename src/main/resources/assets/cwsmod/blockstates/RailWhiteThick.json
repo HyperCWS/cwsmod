@@ -1,0 +1,14 @@
+{
+    "variants": {
+        "shape=north_south": { "model": "cwsmod:RailWhiteThick" },
+        "shape=east_west": { "model": "cwsmod:RailWhiteThick", "y": 90 },
+        "shape=ascending_east": { "model": "cwsmod:RailWhiteThick_ne", "y": 90 },
+        "shape=ascending_west": { "model": "cwsmod:RailWhiteThick_sw", "y": 90 },
+        "shape=ascending_north": { "model": "cwsmod:RailWhiteThick_ne" },
+        "shape=ascending_south": { "model": "cwsmod:RailWhiteThick_sw" },
+        "shape=south_east": { "model": "cwsmod:RailWhiteThick_turn" },
+        "shape=south_west": { "model": "cwsmod:RailWhiteThick_turn", "y": 90 },
+        "shape=north_west": { "model": "cwsmod:RailWhiteThick_turn", "y": 180 },
+        "shape=north_east": { "model": "cwsmod:RailWhiteThick_turn", "y": 270 }
+    }
+}

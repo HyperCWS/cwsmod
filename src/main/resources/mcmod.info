@@ -1,0 +1,16 @@
+[
+{
+  "modid": "cwsmod",
+  "name": "CWSMOD",
+  "description": "A mod written by cws that building the city he want.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://github.com/HyperCWS/cwsmod",
+  "updateUrl": "",
+  "authorList": ["cws"],
+  "credits": "TheGreyGhost,referenced by the example it wrote.",
+  "logoFile": "cwsmod.png",
+  "screenshots": [],
+  "dependencies": []
+}
+]

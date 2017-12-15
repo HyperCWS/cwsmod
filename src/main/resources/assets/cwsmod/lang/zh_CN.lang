@@ -1,0 +1,11 @@
+﻿tile.RailWhiteTurn.name=白色转弯线
+tile.RailYellowThin.name=细黄色线
+tile.RailYellowThick.name=粗黄色线
+tile.RailYellowDouble.name=双黄色线
+tile.RailWhiteUp.name=前
+tile.RailWhiteDown.name=后
+tile.RailWhiteThin.name=细白色线
+tile.RailWhiteThick.name=粗白色线
+tile.BBlock.name=沥青方块
+itemGroup.cws_btab=方块
+itemGroup.cws_ltab=工具和图标
