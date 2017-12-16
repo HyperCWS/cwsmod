@@ -1,10 +1,5 @@
 {
     "variants": {
-        "normal": [
-            { "model": "cwsmod:BBlock" },
-            { "model": "cwsmod:BBLock_mirrored" },
-            { "model": "cwsmod:BBLock", "y": 180 },
-            { "model": "cwsmod:BBLock_mirrored", "y": 180 }
-        ]
+        "normal": { "model": "cwsmod:BBlock" }
     }
 }
