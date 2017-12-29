@@ -1,0 +1,6 @@
+{
+    "parent": "cwsmod:block/TLBRT",
+    "textures": {
+        "sign": "cwsmod:blocks/TBbg"
+    }
+}

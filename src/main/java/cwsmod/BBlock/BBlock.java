@@ -11,12 +11,15 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class BBlock extends Block {
-	protected BBlock(String arg0) {
+	private boolean fullcube;
+
+	protected BBlock(String arg0, int hard, boolean isFull) {
 		super(Material.ROCK);
 		this.setUnlocalizedName(arg0);
 		this.setRegistryName(arg0);
 		this.setCreativeTab(cwsmod.CTabs.CTabs.bTab);
-		this.setHardness(2);
+		this.setHardness(hard);
+		fullcube = isFull;
 	}
 
 	@SideOnly(Side.CLIENT)
@@ -26,12 +29,12 @@ public class BBlock extends Block {
 
 	@Override
 	public boolean isOpaqueCube(IBlockState iBlockState) {
-		return Blocks.STONE.isOpaqueCube(iBlockState);
+		return false;
 	}
 
 	@Override
 	public boolean isFullCube(IBlockState iBlockState) {
-		return Blocks.STONE.isOpaqueCube(iBlockState);
+		return fullcube;
 	}
 
 	@Override

@@ -8,11 +8,15 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class StartupCommon {
-	public static BBlock bblock = new BBlock("BBlock");
+	public static BBlock bblock = new BBlock("BBlock", 2, true);
 	public static ItemBlock ibblock = (ItemBlock) new ItemBlock(bblock).setRegistryName(bblock.getRegistryName());
+	public static BBlock bnotice = new BBlock("BNotice", 1, false);
+	public static ItemBlock ibnotice = (ItemBlock) new ItemBlock(bnotice).setRegistryName(bnotice.getRegistryName());
 
 	public static void preInitCommon() {
 		GameRegistry.register(bblock);
 		GameRegistry.register(ibblock);
+		GameRegistry.register(bnotice);
+		GameRegistry.register(ibnotice);
 	}
 }

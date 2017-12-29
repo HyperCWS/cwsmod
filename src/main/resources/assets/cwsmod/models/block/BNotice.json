@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "down": "blocks/iron_block",
+        "up": "blocks/iron_block",
+        "north": "cwsmod:blocks/warn",
+        "east": "cwsmod:blocks/warn",
+        "south": "cwsmod:blocks/warn",
+        "west": "cwsmod:blocks/warn",
+        "particle": "blocks/iron_block"
+    }
+}

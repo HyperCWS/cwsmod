@@ -1,0 +1,6 @@
+{
+    "parent": "cwsmod:block/TLS2",
+    "textures": {
+        "sign": "cwsmod:blocks/TBs1tg"
+    }
+}

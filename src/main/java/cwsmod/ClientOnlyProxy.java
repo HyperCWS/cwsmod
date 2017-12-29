@@ -10,23 +10,18 @@ public class ClientOnlyProxy extends CommonProxy {
 		super.preInit();
 		cwsmod.Line.StartupClientOnly.preInitClientOnly();
 		cwsmod.BBlock.StartupClientOnly.preInitClientOnly();
+		cwsmod.TLight.StartupClientOnly.preInitClientOnly();
+		cwsmod.Pole.StartupClientOnly.preInitClientOnly();
+		cwsmod.RLight.StartupClientOnly.preinitClientOnly();
+		cwsmod.RBlock.StartupClientOnly.preinitClientOnly();
 	}
 
 	public void init() {
 		super.init();
-		/*
-		 * minecraftbyexample.mbe75_testing_framework.StartupClientOnly.
-		 * initClientOnly();
-		 * minecraftbyexample.testingarea.StartupClientOnly.initClientOnly();
-		 */
 	}
 
 	public void postInit() {
 		super.postInit();
-		/*
-		 * minecraftbyexample.mbe70_configuration.StartupClientOnly.
-		 * postInitClientOnly();
-		 */
 	}
 
 	@Override

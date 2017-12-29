@@ -6,18 +6,16 @@ public abstract class CommonProxy {
 	public void preInit() {
 		cwsmod.Line.StartupCommon.preInitCommon();
 		cwsmod.BBlock.StartupCommon.preInitCommon();
+		cwsmod.TLight.StartupCommon.preInitCommon();
+		cwsmod.Pole.StartupCommon.preInitCommon();
+		cwsmod.RLight.StartupCommon.preInitCommon();
+		cwsmod.RBlock.StartupCommon.preInitCommon();
 	}
 
 	public void init() {
-		/*
-		 * minecraftbyexample.mbe70_configuration.StartupCommon.initCommon();
-		 */
 	}
 
 	public void postInit() {
-		/*
-		 * minecraftbyexample.mbe70_configuration.StartupCommon.postInitCommon()
-		 */
 	}
 
 	abstract public boolean playerIsInCreativeMode(EntityPlayer player);
