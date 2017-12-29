@@ -33,7 +33,7 @@ public class TLight extends Block {
 		this.setUnlocalizedName(arg0);
 		this.setRegistryName(arg0);
 		styleID = sID;
-		this.setLightLevel(15);
+		this.setLightLevel(2);
 	}
 
 	@SideOnly(Side.CLIENT)

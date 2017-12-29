@@ -8,7 +8,7 @@
   "url": "https://github.com/HyperCWS/cwsmod",
   "updateUrl": "",
   "authorList": ["cws"],
-  "credits": "TheGreyGhost,referenced by the example it wrote.",
+  "credits": "TheGreyGhost,CWS and MCForge",
   "logoFile": "cwsmod.png",
   "screenshots": [],
   "dependencies": []

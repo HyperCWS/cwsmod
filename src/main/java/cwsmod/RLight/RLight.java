@@ -21,7 +21,7 @@ public class RLight extends Block {
 		this.setSoundType(SoundType.GLASS);
 		this.setCreativeTab(cwsmod.CTabs.CTabs.bTab);
 		this.setHardness(2);
-		this.setLightLevel(10);
+		this.setLightLevel(2);
 	}
 
 	@Override
