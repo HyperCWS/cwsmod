@@ -14,6 +14,8 @@ public class ClientOnlyProxy extends CommonProxy {
 		cwsmod.Pole.StartupClientOnly.preInitClientOnly();
 		cwsmod.RLight.StartupClientOnly.preinitClientOnly();
 		cwsmod.RBlock.StartupClientOnly.preinitClientOnly();
+		cwsmod.Tools.StartupClientOnly.preInitClientOnly();
+		cwsmod.WTool.StartupClientOnly.preInitClientOnly();
 	}
 
 	public void init() {

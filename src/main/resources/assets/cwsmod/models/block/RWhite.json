@@ -1,0 +1,13 @@
+{
+    "textures": {
+        "p": "cwsmod:blocks/white2"
+    },
+    "elements": [
+	        {   "from": [ 0,1, 0 ],
+            "to": [ 16, 1, 16 ],
+            "faces": {
+                "down":  { "uv": [0,0,16,16], "texture": "#p" },
+                "up":    { "uv": [0,0,16,16], "texture": "#p" }
+            }}
+    ]
+}
