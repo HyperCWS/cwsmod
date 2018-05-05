@@ -12,6 +12,7 @@ public abstract class CommonProxy {
 		cwsmod.RBlock.StartupCommon.preInitCommon();
 		cwsmod.Tools.StartupCommon.preInitCommon();
 		cwsmod.WTool.StartupCommon.preInitCommon();
+		cwsmod.RoadRuller.StartupCommon.preInitCommon();
 	}
 
 	public void init() {

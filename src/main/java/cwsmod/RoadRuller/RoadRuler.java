@@ -1,22 +1,21 @@
-package cwsmod.BBlock;
+package cwsmod.RoadRuller;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Blocks;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.EnumBlockRenderType;
+import net.minecraft.util.math.AxisAlignedBB;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.IBlockAccess;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class BBlock extends Block {
-
-	protected BBlock(String arg0, int hard) {
-		super(Material.ROCK);
-		this.setUnlocalizedName(arg0);
-		this.setRegistryName(arg0);
-		this.setCreativeTab(cwsmod.CTabs.CTabs.bTab);
+public class RoadRuler extends Block {
+	public RoadRuler() {
+		super(Material.SNOW);
+		this.setUnlocalizedName("RoadRullerBlock");
+		this.setRegistryName("RoadRullerBlock");
 	}
 
 	@SideOnly(Side.CLIENT)
@@ -25,13 +24,13 @@ public class BBlock extends Block {
 	}
 
 	@Override
-	public boolean isFullBlock(IBlockState iBlockState) {
-		return true;
+	public boolean isOpaqueCube(IBlockState iBlockState) {
+		return false;
 	}
 
 	@Override
-	public boolean isOpaqueCube(IBlockState iBlockState) {
-		return true;
+	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
+		return new AxisAlignedBB(0, 0, 0, 1, 2 / 16f, 1);
 	}
 
 	@Override
