@@ -26,3 +26,4 @@ run
 /gradle/
 *.7z
 *.zip
+gradlew
