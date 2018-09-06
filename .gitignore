@@ -24,3 +24,5 @@ run
 *.bat
 .gitignore
 /gradle/
+*.7z
+*.zip
