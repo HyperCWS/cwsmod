@@ -15,7 +15,7 @@ public class PutPole extends Item {
 	private Block block;
 	private int len;
 
-	public PutPole(int arg0, String arg1,String arg2) {
+	public PutPole(int arg0, String arg1, String arg2) {
 		this.setMaxStackSize(1);
 		this.setUnlocalizedName(arg2);
 		this.setRegistryName(arg2);

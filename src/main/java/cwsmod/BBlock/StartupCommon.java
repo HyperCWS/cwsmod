@@ -10,7 +10,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class StartupCommon {
 	public static BBlock bblock = new BBlock("BBlock", 2);
 	public static ItemBlock ibblock = (ItemBlock) new ItemBlock(bblock).setRegistryName(bblock.getRegistryName());
-	public static BBlock bnotice = new BBlock("BNotice", 1);
+	public static MBlock bnotice = new MBlock("BNotice");
 	public static ItemBlock ibnotice = (ItemBlock) new ItemBlock(bnotice).setRegistryName(bnotice.getRegistryName());
 
 	public static void preInitCommon() {

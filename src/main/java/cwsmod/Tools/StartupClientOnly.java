@@ -51,5 +51,7 @@ public class StartupClientOnly {
 				new ModelResourceLocation("cwsmod:PutLight11", "inventory"));
 		ModelLoader.setCustomModelResourceLocation(StartupCommon.l12, 0,
 				new ModelResourceLocation("cwsmod:PutLight12", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(StartupCommon.psl1, 0,
+				new ModelResourceLocation("cwsmod:PutStone10", "inventory"));
 	}
 }

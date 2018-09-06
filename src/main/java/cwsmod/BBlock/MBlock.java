@@ -1,23 +1,27 @@
 package cwsmod.BBlock;
 
+import java.util.Random;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Blocks;
+import net.minecraft.client.Minecraft;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.EnumBlockRenderType;
+import net.minecraft.util.EnumParticleTypes;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class BBlock extends Block {
-
-	protected BBlock(String arg0, int hard) {
+public class MBlock extends Block {
+	protected MBlock(String arg0) {
 		super(Material.ROCK);
+		this.setLightLevel(1);
 		this.setUnlocalizedName(arg0);
 		this.setRegistryName(arg0);
 		this.setCreativeTab(cwsmod.CTabs.CTabs.bTab);
-		this.setHardness(hard);
 	}
 
 	@SideOnly(Side.CLIENT)
@@ -26,18 +30,13 @@ public class BBlock extends Block {
 	}
 
 	@Override
-	public boolean isFullBlock(IBlockState iBlockState) {
-		return true;
-	}
-
-	@Override
 	public boolean isOpaqueCube(IBlockState iBlockState) {
-		return true;
+		return false;
 	}
 
 	@Override
 	public boolean isFullCube(IBlockState iBlockState) {
-		return true;
+		return false;
 	}
 
 	@Override
