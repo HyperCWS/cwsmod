@@ -17,9 +17,9 @@ public class AABB {
 			case WEST:
 				return new AxisAlignedBB(0, 0, 0, 13 / 16F, 1, 1);
 			case NORTH:
-				return new AxisAlignedBB(0, 0, 3 / 16F, 1, 1, 1);
+				return new AxisAlignedBB(0, 0, 0, 1, 1, 13/16F);
 			case SOUTH:
-				return new AxisAlignedBB(0, 0, 0, 1, 1, 13 / 16F);
+				return new AxisAlignedBB(0, 0, 3/16F, 1, 1, 1);
 			default:
 				break;
 			}
