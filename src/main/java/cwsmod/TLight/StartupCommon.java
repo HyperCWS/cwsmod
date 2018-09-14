@@ -27,6 +27,14 @@ public class StartupCommon {
 	public static ITLight ITrafficSt1 = (ITLight) new ITLight(TrafficSt1).setRegistryName(TrafficSt1.getRegistryName());
 	public static TLight TrafficLt1 = new TLight("TrafficLeft1",2);
 	public static ITLight ITrafficLt1 = (ITLight) new ITLight(TrafficLt1).setRegistryName(TrafficLt1.getRegistryName());
+	public static TLight TrafficSt2 = new TLight("TrafficStraight2",0);
+	public static ITLight ITrafficSt2 = (ITLight) new ITLight(TrafficSt2).setRegistryName(TrafficSt2.getRegistryName());
+	public static TLight TrafficLt2 = new TLight("TrafficLeft2",0);
+	public static ITLight ITrafficLt2 = (ITLight) new ITLight(TrafficLt2).setRegistryName(TrafficLt2.getRegistryName());
+	public static TLight TrafficBi2 = new TLight("TrafficBike2",1);
+	public static ITLight ITrafficBi2 = (ITLight) new ITLight(TrafficBi2).setRegistryName(TrafficBi2.getRegistryName());
+	public static TLight TrafficCr2 = new TLight("TrafficCircle2",1);
+	public static ITLight ITrafficCr2 = (ITLight) new ITLight(TrafficCr2).setRegistryName(TrafficCr2.getRegistryName());
 	public static void preInitCommon() {
 		GameRegistry.register(TrafficB);
 		GameRegistry.register(ITrafficB);
@@ -52,5 +60,13 @@ public class StartupCommon {
 		GameRegistry.register(ITrafficSt1);
 		GameRegistry.register(TrafficLt1);
 		GameRegistry.register(ITrafficLt1);
+		GameRegistry.register(TrafficSt2);
+		GameRegistry.register(ITrafficSt2);
+		GameRegistry.register(TrafficLt2);
+		GameRegistry.register(ITrafficLt2);
+		GameRegistry.register(TrafficCr2);
+		GameRegistry.register(ITrafficCr2);
+		GameRegistry.register(TrafficBi2);
+		GameRegistry.register(ITrafficBi2);
 	}
 }

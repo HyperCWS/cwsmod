@@ -85,6 +85,7 @@ public class StartupClientOnly {
 				new ModelResourceLocation("cwsmod:TrafficPeople_g", "inventory"));
 		ModelLoader.setCustomModelResourceLocation(StartupCommon.ITrafficPp, TLight.EnumColour.YELLOW.getMetadata(),
 				new ModelResourceLocation("cwsmod:TrafficPeople_y", "inventory"));
+		
 		ModelLoader.setCustomModelResourceLocation(StartupCommon.ITrafficSt1, TLight.EnumColour.EMPTY.getMetadata(),
 				new ModelResourceLocation("cwsmod:TrafficStraight1_e", "inventory"));
 		ModelLoader.setCustomModelResourceLocation(StartupCommon.ITrafficSt1, TLight.EnumColour.RED.getMetadata(),
@@ -101,5 +102,39 @@ public class StartupClientOnly {
 				new ModelResourceLocation("cwsmod:TrafficLeft1_g", "inventory"));
 		ModelLoader.setCustomModelResourceLocation(StartupCommon.ITrafficLt1, TLight.EnumColour.YELLOW.getMetadata(),
 				new ModelResourceLocation("cwsmod:TrafficLeft1_y", "inventory"));
+		
+		ModelLoader.setCustomModelResourceLocation(StartupCommon.ITrafficLt2, TLight.EnumColour.EMPTY.getMetadata(),
+				new ModelResourceLocation("cwsmod:TrafficLeft2_e", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(StartupCommon.ITrafficLt2, TLight.EnumColour.RED.getMetadata(),
+				new ModelResourceLocation("cwsmod:TrafficLeft2_r", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(StartupCommon.ITrafficLt2, TLight.EnumColour.GREEN.getMetadata(),
+				new ModelResourceLocation("cwsmod:TrafficLeft2_g", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(StartupCommon.ITrafficLt2, TLight.EnumColour.YELLOW.getMetadata(),
+				new ModelResourceLocation("cwsmod:TrafficLeft2_y", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(StartupCommon.ITrafficSt2, TLight.EnumColour.EMPTY.getMetadata(),
+				new ModelResourceLocation("cwsmod:TrafficStraight2_e", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(StartupCommon.ITrafficSt2, TLight.EnumColour.RED.getMetadata(),
+				new ModelResourceLocation("cwsmod:TrafficStraight2_r", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(StartupCommon.ITrafficSt2, TLight.EnumColour.GREEN.getMetadata(),
+				new ModelResourceLocation("cwsmod:TrafficStraight2_g", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(StartupCommon.ITrafficSt2, TLight.EnumColour.YELLOW.getMetadata(),
+				new ModelResourceLocation("cwsmod:TrafficStraight2_y", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(StartupCommon.ITrafficBi2, TLight.EnumColour.EMPTY.getMetadata(),
+				new ModelResourceLocation("cwsmod:TrafficBike2_e", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(StartupCommon.ITrafficBi2, TLight.EnumColour.RED.getMetadata(),
+				new ModelResourceLocation("cwsmod:TrafficBike2_r", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(StartupCommon.ITrafficBi2, TLight.EnumColour.GREEN.getMetadata(),
+				new ModelResourceLocation("cwsmod:TrafficBike2_g", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(StartupCommon.ITrafficBi2, TLight.EnumColour.YELLOW.getMetadata(),
+				new ModelResourceLocation("cwsmod:TrafficBike2_y", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(StartupCommon.ITrafficCr2, TLight.EnumColour.EMPTY.getMetadata(),
+				new ModelResourceLocation("cwsmod:TrafficCircle2_e", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(StartupCommon.ITrafficCr2, TLight.EnumColour.RED.getMetadata(),
+				new ModelResourceLocation("cwsmod:TrafficCircle2_r", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(StartupCommon.ITrafficCr2, TLight.EnumColour.GREEN.getMetadata(),
+				new ModelResourceLocation("cwsmod:TrafficCircle2_g", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(StartupCommon.ITrafficCr2, TLight.EnumColour.YELLOW.getMetadata(),
+				new ModelResourceLocation("cwsmod:TrafficCircle2_y", "inventory"));
+		
 	}
 }

@@ -1,0 +1,6 @@
+{
+    "parent": "cwsmod:block/TLS3",
+    "textures": {
+        "sign": "cwsmod:blocks/bike2y"
+    }
+}

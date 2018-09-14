@@ -1,9 +1,9 @@
 {
     "ambientocclusion": false,
     "textures": {
-        "bk": "cwsmod:blocks/TGback",
+        "bk": "cwsmod:blocks/Tback2",
         "side": "cwsmod:blocks/gray",
-        "s": "cwsmod:blocks/Tgside"
+        "s": "cwsmod:blocks/Tside2"
     },
     "elements": [
         {  "from": [2, 0, 0],
