@@ -1,5 +1,5 @@
 {
-"parent":"cwsmod:block/TrafficStraight_r",
+"parent":"cwsmod:block/TrafficStraight2_r",
   "display": {
     "thirdperson_righthand": {
       "rotation": [ 75, 315, 0 ],
