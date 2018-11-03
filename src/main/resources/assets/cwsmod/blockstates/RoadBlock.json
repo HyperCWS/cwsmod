@@ -1,5 +1,7 @@
 {
     "variants": {
-        "normal": { "model": "cwsmod:RoadBlock" }
+        "normal": {
+            "model": "cwsmod:RoadBlock"
+        }
     }
 }

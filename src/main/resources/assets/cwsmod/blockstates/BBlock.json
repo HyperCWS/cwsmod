@@ -1,5 +1,7 @@
 {
     "variants": {
-        "normal": { "model": "cwsmod:BBlock" }
+        "normal": {
+            "model": "cwsmod:BBlock"
+        }
     }
 }

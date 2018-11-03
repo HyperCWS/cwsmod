@@ -1,20 +1,64 @@
 {
-"variants":{
-"colour=red,facing=north":{"model":"cwsmod:TrafficLeft2_r"},
-"colour=red,facing=east":{"model":"cwsmod:TrafficLeft2_r","y":90},
-"colour=red,facing=south":{"model":"cwsmod:TrafficLeft2_r","y":180},
-"colour=red,facing=west":{"model":"cwsmod:TrafficLeft2_r","y":270},
-"colour=yellow,facing=north":{"model":"cwsmod:TrafficLeft2_y"},
-"colour=yellow,facing=east":{"model":"cwsmod:TrafficLeft2_y","y":90},
-"colour=yellow,facing=south":{"model":"cwsmod:TrafficLeft2_y","y":180},
-"colour=yellow,facing=west":{"model":"cwsmod:TrafficLeft2_y","y":270},
-"colour=green,facing=north":{"model":"cwsmod:TrafficLeft2_g"},
-"colour=green,facing=east":{"model":"cwsmod:TrafficLeft2_g","y":90},
-"colour=green,facing=south":{"model":"cwsmod:TrafficLeft2_g","y":180},
-"colour=green,facing=west":{"model":"cwsmod:TrafficLeft2_g","y":270},
-"colour=empty,facing=north":{"model":"cwsmod:TrafficLeft2_e"},
-"colour=empty,facing=east":{"model":"cwsmod:TrafficLeft2_e","y":90},
-"colour=empty,facing=south":{"model":"cwsmod:TrafficLeft2_e","y":180},
-"colour=empty,facing=west":{"model":"cwsmod:TrafficLeft2_e","y":270}
-}
+    "variants": {
+        "colour=red,facing=north": {
+            "model": "cwsmod:TrafficLeft2_r"
+        },
+        "colour=red,facing=east": {
+            "model": "cwsmod:TrafficLeft2_r",
+            "y": 90
+        },
+        "colour=red,facing=south": {
+            "model": "cwsmod:TrafficLeft2_r",
+            "y": 180
+        },
+        "colour=red,facing=west": {
+            "model": "cwsmod:TrafficLeft2_r",
+            "y": 270
+        },
+        "colour=yellow,facing=north": {
+            "model": "cwsmod:TrafficLeft2_y"
+        },
+        "colour=yellow,facing=east": {
+            "model": "cwsmod:TrafficLeft2_y",
+            "y": 90
+        },
+        "colour=yellow,facing=south": {
+            "model": "cwsmod:TrafficLeft2_y",
+            "y": 180
+        },
+        "colour=yellow,facing=west": {
+            "model": "cwsmod:TrafficLeft2_y",
+            "y": 270
+        },
+        "colour=green,facing=north": {
+            "model": "cwsmod:TrafficLeft2_g"
+        },
+        "colour=green,facing=east": {
+            "model": "cwsmod:TrafficLeft2_g",
+            "y": 90
+        },
+        "colour=green,facing=south": {
+            "model": "cwsmod:TrafficLeft2_g",
+            "y": 180
+        },
+        "colour=green,facing=west": {
+            "model": "cwsmod:TrafficLeft2_g",
+            "y": 270
+        },
+        "colour=empty,facing=north": {
+            "model": "cwsmod:TrafficLeft2_e"
+        },
+        "colour=empty,facing=east": {
+            "model": "cwsmod:TrafficLeft2_e",
+            "y": 90
+        },
+        "colour=empty,facing=south": {
+            "model": "cwsmod:TrafficLeft2_e",
+            "y": 180
+        },
+        "colour=empty,facing=west": {
+            "model": "cwsmod:TrafficLeft2_e",
+            "y": 270
+        }
+    }
 }

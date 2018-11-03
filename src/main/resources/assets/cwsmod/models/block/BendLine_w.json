@@ -1,0 +1,18 @@
+{
+	"ambientocclusion": false,
+	"textures": {
+		"tex": "cwsmod:blocks/wbandline"
+	},
+	"elements": [{
+			"shade": false,
+			"from": [0, 0, -16],
+			"to": [32, 0.1, 32],
+			"faces": {
+				"up": {
+					"uv": [0, 0, 16, 16],
+					"texture": "#tex"
+				}
+			}
+		}
+	]
+}

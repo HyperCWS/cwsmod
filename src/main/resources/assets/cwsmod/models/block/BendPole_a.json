@@ -1,0 +1,42 @@
+{
+	"textures": {
+		"texture": "blocks/quartz_block_bottom"
+	},
+	"elements": [{
+			"from": [6, 6, -16],
+			"to": [10, 10, 32],
+			"rotation": {
+				"origin": [0, 0, -12],
+				"axis": "x",
+				"angle": -22.5
+			},
+			"shade": true,
+			"faces": {
+				"down": {
+					"uv": [0, 0, 4, 16],
+					"texture": "#texture"
+				},
+				"up": {
+					"uv": [0, 0, 4, 16],
+					"texture": "#texture"
+				},
+				"north": {
+					"uv": [0, 0, 4, 16],
+					"texture": "#texture"
+				},
+				"south": {
+					"uv": [0, 0, 4, 16],
+					"texture": "#texture"
+				},
+				"west": {
+					"uv": [0, 0, 4, 4],
+					"texture": "#texture"
+				},
+				"east": {
+					"uv": [0, 0, 4, 4],
+					"texture": "#texture"
+				}
+			}
+		}
+	]
+}

@@ -11,6 +11,7 @@ public class StartupCommon {
 	public static PutLine pliney = new PutLine("cwsmod:RailYellowThin", "PLyellow");
 	public static BStation bs0 = new BStation(0, "BStation0");
 	public static BStation bs1 = new BStation(1, "BStation1");
+	public static BStation bs2 = new BStation(2, "BStation2");
 	public static BuildRoad br3 = new BuildRoad(3);
 	public static BuildRoad br5 = new BuildRoad(5);
 	public static BuildRoad br7 = new BuildRoad(7);
@@ -37,6 +38,7 @@ public class StartupCommon {
 		GameRegistry.register(plinew);
 		GameRegistry.register(bs0);
 		GameRegistry.register(bs1);
+		GameRegistry.register(bs2);
 		GameRegistry.register(br3);
 		GameRegistry.register(br5);
 		GameRegistry.register(br7);

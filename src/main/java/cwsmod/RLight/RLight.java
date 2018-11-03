@@ -31,7 +31,7 @@ public class RLight extends Block {
 
 	@SideOnly(Side.CLIENT)
 	public BlockRenderLayer getBlockLayer() {
-		return BlockRenderLayer.SOLID;
+		return BlockRenderLayer.CUTOUT_MIPPED;
 	}
 
 	@Override

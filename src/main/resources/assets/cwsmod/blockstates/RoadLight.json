@@ -1,5 +1,7 @@
 {
     "variants": {
-        "normal": { "model": "cwsmod:RoadLight" }
+        "normal": {
+            "model": "cwsmod:RoadLight"
+        }
     }
 }

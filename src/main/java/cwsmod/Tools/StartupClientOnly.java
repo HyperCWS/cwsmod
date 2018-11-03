@@ -16,8 +16,10 @@ public class StartupClientOnly {
 		ModelLoader.setCustomModelResourceLocation(StartupCommon.pliney, 0,
 				new ModelResourceLocation("cwsmod:PLyellow", "inventory"));
 		ModelLoader.setCustomModelResourceLocation(StartupCommon.bs0, 0,
-				new ModelResourceLocation("cwsmod:BStation1", "inventory"));
+				new ModelResourceLocation("cwsmod:BStation0", "inventory"));
 		ModelLoader.setCustomModelResourceLocation(StartupCommon.bs1, 0,
+				new ModelResourceLocation("cwsmod:BStation1", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(StartupCommon.bs2, 0,
 				new ModelResourceLocation("cwsmod:BStation2", "inventory"));
 		ModelLoader.setCustomModelResourceLocation(StartupCommon.br3, 0,
 				new ModelResourceLocation("cwsmod:BuildRoad3", "inventory"));

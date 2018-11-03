@@ -1,7 +1,9 @@
 {
     "variants": {
         "normal": [
-            { "model": "cwsmod:pole" }
+            {
+                "model": "cwsmod:pole"
+            }
         ]
     }
 }

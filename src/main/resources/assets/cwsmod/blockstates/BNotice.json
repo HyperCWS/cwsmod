@@ -1,7 +1,9 @@
 {
     "variants": {
         "normal": [
-            { "model": "cwsmod:BNotice" }
+            {
+                "model": "cwsmod:BNotice"
+            }
         ]
     }
 }

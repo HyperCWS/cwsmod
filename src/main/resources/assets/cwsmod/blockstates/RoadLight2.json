@@ -1,0 +1,34 @@
+{
+	"variants": {
+		"colour=red,facing=north": {
+			"model": "cwsmod:RoadLight2_r"
+		},
+		"colour=red,facing=east": {
+			"model": "cwsmod:RoadLight2_r",
+			"y": 90
+		},
+		"colour=red,facing=south": {
+			"model": "cwsmod:RoadLight2_r",
+			"y": 180
+		},
+		"colour=red,facing=west": {
+			"model": "cwsmod:RoadLight2_r",
+			"y": 270
+		},
+		"colour=blue,facing=north": {
+			"model": "cwsmod:RoadLight2_b"
+		},
+		"colour=blue,facing=east": {
+			"model": "cwsmod:RoadLight2_b",
+			"y": 90
+		},
+		"colour=blue,facing=south": {
+			"model": "cwsmod:RoadLight2_b",
+			"y": 180
+		},
+		"colour=blue,facing=west": {
+			"model": "cwsmod:RoadLight2_b",
+			"y": 270
+		}
+	}
+}

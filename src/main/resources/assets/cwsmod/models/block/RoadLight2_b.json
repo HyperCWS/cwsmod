@@ -1,0 +1,6 @@
+{
+	"parent": "cwsmod:block/RoadLight2",
+	"textures": {
+		"color": "cwsmod:blocks/blue"
+	}
+}

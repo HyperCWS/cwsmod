@@ -1,14 +1,40 @@
 {
     "variants": {
-        "shape=north_south": { "model": "cwsmod:RailYellowThick" },
-        "shape=east_west": { "model": "cwsmod:RailYellowThick", "y": 90 },
-        "shape=ascending_east": { "model": "cwsmod:RailYellowThick_ne", "y": 90 },
-        "shape=ascending_west": { "model": "cwsmod:RailYellowThick_sw", "y": 90 },
-        "shape=ascending_north": { "model": "cwsmod:RailYellowThick_ne" },
-        "shape=ascending_south": { "model": "cwsmod:RailYellowThick_sw" },
-        "shape=south_east": { "model": "cwsmod:RailYellowThick_turn" },
-        "shape=south_west": { "model": "cwsmod:RailYellowThick_turn", "y": 90 },
-        "shape=north_west": { "model": "cwsmod:RailYellowThick_turn", "y": 180 },
-        "shape=north_east": { "model": "cwsmod:RailYellowThick_turn", "y": 270 }
+        "shape=north_south": {
+            "model": "cwsmod:RailYellowThick"
+        },
+        "shape=east_west": {
+            "model": "cwsmod:RailYellowThick",
+            "y": 90
+        },
+        "shape=ascending_east": {
+            "model": "cwsmod:RailYellowThick_ne",
+            "y": 90
+        },
+        "shape=ascending_west": {
+            "model": "cwsmod:RailYellowThick_sw",
+            "y": 90
+        },
+        "shape=ascending_north": {
+            "model": "cwsmod:RailYellowThick_ne"
+        },
+        "shape=ascending_south": {
+            "model": "cwsmod:RailYellowThick_sw"
+        },
+        "shape=south_east": {
+            "model": "cwsmod:RailYellowThick_turn"
+        },
+        "shape=south_west": {
+            "model": "cwsmod:RailYellowThick_turn",
+            "y": 90
+        },
+        "shape=north_west": {
+            "model": "cwsmod:RailYellowThick_turn",
+            "y": 180
+        },
+        "shape=north_east": {
+            "model": "cwsmod:RailYellowThick_turn",
+            "y": 270
+        }
     }
 }

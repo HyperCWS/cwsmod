@@ -1,7 +1,9 @@
 {
     "variants": {
         "normal": [
-            { "model": "cwsmod:RoadRuler" }
+            {
+                "model": "cwsmod:RoadRuler"
+            }
         ]
     }
 }

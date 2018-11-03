@@ -1,14 +1,40 @@
 {
     "variants": {
-        "shape=north_south": { "model": "cwsmod:RailWhiteThin" },
-        "shape=east_west": { "model": "cwsmod:RailWhiteThin", "y": 90 },
-        "shape=ascending_east": { "model": "cwsmod:RailWhiteThin_ne", "y": 90 },
-        "shape=ascending_west": { "model": "cwsmod:RailWhiteThin_sw", "y": 90 },
-        "shape=ascending_north": { "model": "cwsmod:RailWhiteThin_ne" },
-        "shape=ascending_south": { "model": "cwsmod:RailWhiteThin_sw" },
-        "shape=south_east": { "model": "cwsmod:RailWhiteThin_turn" },
-        "shape=south_west": { "model": "cwsmod:RailWhiteThin_turn", "y": 90 },
-        "shape=north_west": { "model": "cwsmod:RailWhiteThin_turn", "y": 180 },
-        "shape=north_east": { "model": "cwsmod:RailWhiteThin_turn", "y": 270 }
+        "shape=north_south": {
+            "model": "cwsmod:RailWhiteThin"
+        },
+        "shape=east_west": {
+            "model": "cwsmod:RailWhiteThin",
+            "y": 90
+        },
+        "shape=ascending_east": {
+            "model": "cwsmod:RailWhiteThin_ne",
+            "y": 90
+        },
+        "shape=ascending_west": {
+            "model": "cwsmod:RailWhiteThin_sw",
+            "y": 90
+        },
+        "shape=ascending_north": {
+            "model": "cwsmod:RailWhiteThin_ne"
+        },
+        "shape=ascending_south": {
+            "model": "cwsmod:RailWhiteThin_sw"
+        },
+        "shape=south_east": {
+            "model": "cwsmod:RailWhiteThin_turn"
+        },
+        "shape=south_west": {
+            "model": "cwsmod:RailWhiteThin_turn",
+            "y": 90
+        },
+        "shape=north_west": {
+            "model": "cwsmod:RailWhiteThin_turn",
+            "y": 180
+        },
+        "shape=north_east": {
+            "model": "cwsmod:RailWhiteThin_turn",
+            "y": 270
+        }
     }
 }
