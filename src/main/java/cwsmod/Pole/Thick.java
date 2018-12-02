@@ -12,12 +12,14 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class Thick extends Block {
+	private int width;
 
-	public Thick(String arg0) {
+	public Thick(String arg0, int arg1) {
 		super(Material.ROCK);
 		this.setUnlocalizedName(arg0);
 		this.setRegistryName(arg0);
 		this.setCreativeTab(cwsmod.CTabs.CTabs.bTab);
+		width = arg1;
 	}
 
 	@SideOnly(Side.CLIENT)
@@ -27,7 +29,7 @@ public class Thick extends Block {
 
 	@Override
 	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
-		return new AxisAlignedBB(5 / 16f, 0, 5 / 16f, 11 / 16f, 1, 11 / 16f);
+		return new AxisAlignedBB(width / 16f, 0, width / 16f, (16 - width) / 16f, 1, (16 - width) / 16f);
 	}
 
 	@Override

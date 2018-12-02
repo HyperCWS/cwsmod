@@ -13,7 +13,6 @@ public abstract class CommonProxy {
 		cwsmod.Tools.StartupCommon.preInitCommon();
 		cwsmod.WTool.StartupCommon.preInitCommon();
 		cwsmod.RoadRuller.StartupCommon.preInitCommon();
-		// cwsmod.Line.bend.StartupCommon.preInitCommon();
 		cwsmod.Pole.bend.StartupCommon.preInitCommon();
 	}
 

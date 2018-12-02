@@ -29,6 +29,7 @@ public class StartupCommon {
 	public static PutLight l11 = new PutLight(11);
 	public static PutLight l12 = new PutLight(12);
 	public static PutStoneLine psl1 = new PutStoneLine(Blocks.STONE, "PutStone10");
+	public static SubwayTurn st = new SubwayTurn("subwayTurn");
 
 	public static void preInitCommon() {
 		GameRegistry.register(ppolen5);
@@ -56,5 +57,6 @@ public class StartupCommon {
 		GameRegistry.register(l11);
 		GameRegistry.register(l12);
 		GameRegistry.register(psl1);
+		GameRegistry.register(st);
 	}
 }

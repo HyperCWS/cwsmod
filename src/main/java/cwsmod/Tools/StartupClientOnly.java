@@ -2,6 +2,7 @@ package cwsmod.Tools;
 
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraftforge.client.model.ModelLoader;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class StartupClientOnly {
 	public static void preInitClientOnly() {
@@ -55,5 +56,7 @@ public class StartupClientOnly {
 				new ModelResourceLocation("cwsmod:PutLight12", "inventory"));
 		ModelLoader.setCustomModelResourceLocation(StartupCommon.psl1, 0,
 				new ModelResourceLocation("cwsmod:PutStone10", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(StartupCommon.st, 0,
+				new ModelResourceLocation("cwsmod:SubwayTurn", "inventory"));
 	}
 }

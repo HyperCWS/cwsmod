@@ -30,7 +30,6 @@ public class TBendPole extends Block {
 		this.setCreativeTab(cwsmod.CTabs.CTabs.bTab);
 		this.setUnlocalizedName(arg0);
 		this.setRegistryName(arg0);
-		this.setLightLevel(2);
 	}
 
 	@SideOnly(Side.CLIENT)

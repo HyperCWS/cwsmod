@@ -13,13 +13,14 @@ public class StartupCommon {
 	public static Fence poleC = new Fence("PoleC");
 	public static Fence poleL = new Fence("PoleL");
 	public static Fence roadF = new Fence("RoadFence");
-	public static Thick poleM = new Thick("PoleM");
+	public static Thick poleM = new Thick("PoleM", 5);
 	public static ItemBlock ipt = (ItemBlock) new ItemBlock(poleT).setRegistryName(poleT.getRegistryName());
 	public static ItemBlock ipd = (ItemBlock) new ItemBlock(poleD).setRegistryName(poleD.getRegistryName());
 	public static ItemBlock ipc = (ItemBlock) new ItemBlock(poleC).setRegistryName(poleC.getRegistryName());
 	public static ItemBlock ipl = (ItemBlock) new ItemBlock(poleL).setRegistryName(poleL.getRegistryName());
 	public static ItemBlock ipm = (ItemBlock) new ItemBlock(poleM).setRegistryName(poleM.getRegistryName());
 	public static ItemBlock irf = (ItemBlock) new ItemBlock(roadF).setRegistryName(roadF.getRegistryName());
+
 	public static void preInitCommon() {
 		GameRegistry.register(poleT);
 		GameRegistry.register(poleD);

@@ -107,6 +107,7 @@ item.PutLight9.name=Build Light(STYLE9)
 item.PutLight10.name=Build Light(STYLE10)
 item.PutLight11.name=Build Light(STYLE11)
 item.PutLight12.name=Build Light(STYLE12)
+item.subwayTurn.name=Subway Trunleft Channel
 tile.TrafficCircle2.empty.name=Circle2(empty)
 tile.TrafficCircle2.red.name=Circle2(red)
 tile.TrafficCircle2.yellow.name=Circle2(yellow)

@@ -38,25 +38,24 @@ public class PutLight extends Item {
 		EnumFacing facing = playerIn.getHorizontalFacing();
 		switch (style) {
 		case 0:
-			for (int i = 0; i < 20; i++) {
+			for (int i = 0; i < 20; i++)
 				worldIn.setBlockState(new BlockPos(x, y + i, z), thick);
-			}
 			y += 20;
 			worldIn.setBlockState(new BlockPos(x, y, z), thin);
 			switch (facing) {
-			case EAST:
+			case NORTH:
 				worldIn.setBlockState(new BlockPos(x - 1, y, z), l);
 				worldIn.setBlockState(new BlockPos(x - 2, y, z), l);
 				break;
-			case NORTH:
+			case WEST:
 				worldIn.setBlockState(new BlockPos(x, y, z + 1), l);
 				worldIn.setBlockState(new BlockPos(x, y, z + 2), l);
 				break;
-			case SOUTH:
+			case EAST:
 				worldIn.setBlockState(new BlockPos(x, y, z - 1), l);
 				worldIn.setBlockState(new BlockPos(x, y, z - 2), l);
 				break;
-			case WEST:
+			case SOUTH:
 				worldIn.setBlockState(new BlockPos(x + 1, y, z), l);
 				worldIn.setBlockState(new BlockPos(x + 2, y, z), l);
 				break;
@@ -65,25 +64,24 @@ public class PutLight extends Item {
 			}
 			break;
 		case 1:
-			for (int i = 0; i < 10; i++) {
+			for (int i = 0; i < 10; i++)
 				worldIn.setBlockState(new BlockPos(x, y + i, z), thick);
-			}
 			worldIn.setBlockState(new BlockPos(x, y + 10, z), bottom);
 			y += 10;
 			switch (facing) {
-			case EAST:
+			case NORTH:
 				worldIn.setBlockState(new BlockPos(x - 1, y, z), l);
 				worldIn.setBlockState(new BlockPos(x - 2, y, z), l);
 				break;
-			case NORTH:
+			case WEST:
 				worldIn.setBlockState(new BlockPos(x, y, z + 1), l);
 				worldIn.setBlockState(new BlockPos(x, y, z + 2), l);
 				break;
-			case SOUTH:
+			case EAST:
 				worldIn.setBlockState(new BlockPos(x, y, z - 1), l);
 				worldIn.setBlockState(new BlockPos(x, y, z - 2), l);
 				break;
-			case WEST:
+			case SOUTH:
 				worldIn.setBlockState(new BlockPos(x + 1, y, z), l);
 				worldIn.setBlockState(new BlockPos(x + 2, y, z), l);
 				break;
@@ -92,25 +90,23 @@ public class PutLight extends Item {
 			}
 			break;
 		case 2:
-			for (int i = 0; i < 10; i++) {
-				if (i < 5) {
+			for (int i = 0; i < 10; i++)
+				if (i < 5)
 					worldIn.setBlockState(new BlockPos(x, y + i, z), thick);
-				} else {
+				else
 					worldIn.setBlockState(new BlockPos(x, y + i, z), thin);
-				}
-			}
 			y += 9;
 			switch (facing) {
-			case EAST:
+			case NORTH:
 				worldIn.setBlockState(new BlockPos(x - 1, y, z), l);
 				break;
-			case NORTH:
+			case WEST:
 				worldIn.setBlockState(new BlockPos(x, y, z + 1), l);
 				break;
-			case SOUTH:
+			case EAST:
 				worldIn.setBlockState(new BlockPos(x, y, z - 1), l);
 				break;
-			case WEST:
+			case SOUTH:
 				worldIn.setBlockState(new BlockPos(x + 1, y, z), l);
 				break;
 			default:
@@ -118,37 +114,35 @@ public class PutLight extends Item {
 			}
 			break;
 		case 3:
-			for (int i = 0; i < 15; i++) {
-				if (i < 10) {
+			for (int i = 0; i < 15; i++)
+				if (i < 10)
 					worldIn.setBlockState(new BlockPos(x, y + i, z), thick);
-				} else {
+				else
 					worldIn.setBlockState(new BlockPos(x, y + i, z), thin);
-				}
-			}
 			y += 14;
 			switch (facing) {
-			case EAST:
+			case NORTH:
 				worldIn.setBlockState(new BlockPos(x - 1, y, z), cen);
 				worldIn.setBlockState(new BlockPos(x + 1, y - 4, z), l);
 				for (int j = 2; j <= 3; j++) {
 					worldIn.setBlockState(new BlockPos(x - j, y, z), l);
 				}
 				break;
-			case NORTH:
+			case WEST:
 				worldIn.setBlockState(new BlockPos(x, y, z + 1), cen);
 				worldIn.setBlockState(new BlockPos(x, y - 4, z - 1), l);
 				for (int j = 2; j <= 3; j++) {
 					worldIn.setBlockState(new BlockPos(x, y, z + j), l);
 				}
 				break;
-			case SOUTH:
+			case EAST:
 				worldIn.setBlockState(new BlockPos(x, y, z - 1), cen);
 				worldIn.setBlockState(new BlockPos(x, y - 4, z + 1), l);
 				for (int j = 2; j <= 3; j++) {
 					worldIn.setBlockState(new BlockPos(x, y, z - j), l);
 				}
 				break;
-			case WEST:
+			case SOUTH:
 				worldIn.setBlockState(new BlockPos(x + 1, y, z), cen);
 				worldIn.setBlockState(new BlockPos(x - 1, y - 4, z), l);
 				for (int j = 2; j <= 3; j++) {
@@ -160,13 +154,11 @@ public class PutLight extends Item {
 			}
 			break;
 		case 4:
-			for (int i = 0; i < 20; i++) {
-				if (i < 18) {
+			for (int i = 0; i < 20; i++)
+				if (i < 18)
 					worldIn.setBlockState(new BlockPos(x, y + i, z), thick);
-				} else {
+				else
 					worldIn.setBlockState(new BlockPos(x, y + i, z), Blocks.QUARTZ_BLOCK.getDefaultState());
-				}
-			}
 			y += 19;
 			worldIn.setBlockState(new BlockPos(x - 1, y, z), cen);
 			for (int j = 2; j <= 3; j++) {
@@ -186,31 +178,30 @@ public class PutLight extends Item {
 			}
 			break;
 		case 5:
-			for (int i = 0; i < 10; i++) {
+			for (int i = 0; i < 10; i++)
 				worldIn.setBlockState(new BlockPos(x, y + i, z), thick);
-			}
 			worldIn.setBlockState(new BlockPos(x, y + 10, z), bottom);
 			y += 10;
 			switch (facing) {
-			case EAST:
+			case NORTH:
 				worldIn.setBlockState(new BlockPos(x - 1, y, z), cen);
 				for (int j = 2; j <= 3; j++) {
 					worldIn.setBlockState(new BlockPos(x - j, y, z), l);
 				}
 				break;
-			case NORTH:
+			case WEST:
 				worldIn.setBlockState(new BlockPos(x, y, z + 1), cen);
 				for (int j = 2; j <= 3; j++) {
 					worldIn.setBlockState(new BlockPos(x, y, z + j), l);
 				}
 				break;
-			case SOUTH:
+			case EAST:
 				worldIn.setBlockState(new BlockPos(x, y, z - 1), cen);
 				for (int j = 2; j <= 3; j++) {
 					worldIn.setBlockState(new BlockPos(x, y, z - j), l);
 				}
 				break;
-			case WEST:
+			case SOUTH:
 				worldIn.setBlockState(new BlockPos(x + 1, y, z), cen);
 				for (int j = 2; j <= 3; j++) {
 					worldIn.setBlockState(new BlockPos(x + j, y, z), l);
@@ -221,74 +212,73 @@ public class PutLight extends Item {
 			}
 			break;
 		case 6:
-			for (int i = 0; i < 11; i++) {
+			for (int i = 0; i < 11; i++)
+				worldIn.setBlockState(new BlockPos(x, y + i, z), thick);
+			for (int i = 11; i < 16; i++)
 				worldIn.setBlockState(new BlockPos(x, y + i, z), thin);
-			}
-			y += 7;
+			y += 11;
 			switch (facing) {
-			case EAST:
+			case NORTH:
 				x -= 1;
 				worldIn.setBlockState(new BlockPos(x, y, z), top);
 				worldIn.setBlockState(new BlockPos(x, y + 1, z), bottom);
-				worldIn.setBlockState(new BlockPos(x, y + 3, z), cen);
-				worldIn.setBlockState(new BlockPos(x - 1, y + 3, z), l);
+				worldIn.setBlockState(new BlockPos(x, y + 4, z), cen);
+				worldIn.setBlockState(new BlockPos(x - 1, y + 4, z), l);
 				x += 2;
 				y += 1;
 				worldIn.setBlockState(new BlockPos(x, y, z), l);
-				worldIn.setBlockState(new BlockPos(x, y + 1, z), top);
-				worldIn.setBlockState(new BlockPos(x, y + 2, z), bottom);
+				worldIn.setBlockState(new BlockPos(x, y + 2, z), top);
+				worldIn.setBlockState(new BlockPos(x, y + 3, z), bottom);
 				break;
-			case NORTH:
+			case WEST:
 				z += 1;
 				worldIn.setBlockState(new BlockPos(x, y, z), top);
 				worldIn.setBlockState(new BlockPos(x, y + 1, z), bottom);
-				worldIn.setBlockState(new BlockPos(x, y + 3, z), cen);
-				worldIn.setBlockState(new BlockPos(x, y + 3, z + 1), l);
+				worldIn.setBlockState(new BlockPos(x, y + 4, z), cen);
+				worldIn.setBlockState(new BlockPos(x, y + 4, z + 1), l);
 				z -= 2;
 				y += 1;
 				worldIn.setBlockState(new BlockPos(x, y, z), l);
-				worldIn.setBlockState(new BlockPos(x, y + 1, z), top);
-				worldIn.setBlockState(new BlockPos(x, y + 2, z), bottom);
+				worldIn.setBlockState(new BlockPos(x, y + 2, z), top);
+				worldIn.setBlockState(new BlockPos(x, y + 3, z), bottom);
 				break;
-			case SOUTH:
+			case EAST:
 				z -= 1;
 				worldIn.setBlockState(new BlockPos(x, y, z), top);
 				worldIn.setBlockState(new BlockPos(x, y + 1, z), bottom);
-				worldIn.setBlockState(new BlockPos(x, y + 3, z), cen);
-				worldIn.setBlockState(new BlockPos(x, y + 3, z - 1), l);
+				worldIn.setBlockState(new BlockPos(x, y + 4, z), cen);
+				worldIn.setBlockState(new BlockPos(x, y + 4, z - 1), l);
 				z += 2;
 				y += 1;
 				worldIn.setBlockState(new BlockPos(x, y, z), l);
-				worldIn.setBlockState(new BlockPos(x, y + 1, z), top);
-				worldIn.setBlockState(new BlockPos(x, y + 2, z), bottom);
+				worldIn.setBlockState(new BlockPos(x, y + 2, z), top);
+				worldIn.setBlockState(new BlockPos(x, y + 3, z), bottom);
 				break;
-			case WEST:
+			case SOUTH:
 				x += 1;
 				worldIn.setBlockState(new BlockPos(x, y, z), top);
 				worldIn.setBlockState(new BlockPos(x, y + 1, z), bottom);
-				worldIn.setBlockState(new BlockPos(x, y + 3, z), cen);
-				worldIn.setBlockState(new BlockPos(x + 1, y + 3, z), l);
+				worldIn.setBlockState(new BlockPos(x, y + 4, z), cen);
+				worldIn.setBlockState(new BlockPos(x + 1, y + 4, z), l);
 				x -= 2;
 				y += 1;
 				worldIn.setBlockState(new BlockPos(x, y, z), l);
-				worldIn.setBlockState(new BlockPos(x, y + 1, z), top);
-				worldIn.setBlockState(new BlockPos(x, y + 2, z), bottom);
+				worldIn.setBlockState(new BlockPos(x, y + 2, z), top);
+				worldIn.setBlockState(new BlockPos(x, y + 3, z), bottom);
 				break;
 			default:
 				break;
 			}
 			break;
 		case 7:
-			for (int i = 0; i < 15; i++) {
-				if (i < 10) {
+			for (int i = 0; i < 15; i++)
+				if (i < 10)
 					worldIn.setBlockState(new BlockPos(x, y + i, z), thick);
-				} else {
+				else
 					worldIn.setBlockState(new BlockPos(x, y + i, z), thin);
-				}
-			}
 			y += 10;
 			switch (facing) {
-			case EAST:
+			case NORTH:
 				x -= 1;
 				worldIn.setBlockState(new BlockPos(x, y, z), top);
 				worldIn.setBlockState(new BlockPos(x, y + 1, z), thin);
@@ -303,7 +293,7 @@ public class PutLight extends Item {
 				worldIn.setBlockState(new BlockPos(x - 3, y, z), l);
 				worldIn.setBlockState(new BlockPos(x - 4, y, z), l);
 				break;
-			case NORTH:
+			case WEST:
 				z += 1;
 				worldIn.setBlockState(new BlockPos(x, y, z), top);
 				worldIn.setBlockState(new BlockPos(x, y + 1, z), thin);
@@ -318,7 +308,7 @@ public class PutLight extends Item {
 				worldIn.setBlockState(new BlockPos(x, y, z + 3), l);
 				worldIn.setBlockState(new BlockPos(x, y, z + 4), l);
 				break;
-			case SOUTH:
+			case EAST:
 				z -= 1;
 				worldIn.setBlockState(new BlockPos(x, y, z), top);
 				worldIn.setBlockState(new BlockPos(x, y + 1, z), thin);
@@ -333,7 +323,7 @@ public class PutLight extends Item {
 				worldIn.setBlockState(new BlockPos(x, y, z - 3), l);
 				worldIn.setBlockState(new BlockPos(x, y, z - 4), l);
 				break;
-			case WEST:
+			case SOUTH:
 				x += 1;
 				worldIn.setBlockState(new BlockPos(x, y, z), top);
 				worldIn.setBlockState(new BlockPos(x, y + 1, z), thin);
@@ -353,13 +343,11 @@ public class PutLight extends Item {
 			}
 			break;
 		case 8:
-			for (int i = 0; i < 12; i++) {
-				if (i < 10) {
+			for (int i = 0; i < 12; i++)
+				if (i < 10)
 					worldIn.setBlockState(new BlockPos(x, y + i, z), thick);
-				} else {
+				else
 					worldIn.setBlockState(new BlockPos(x, y + i, z), thin);
-				}
-			}
 			y += 9;
 			if (facing.name() == "NORTH" || facing.name() == "SOUTH") {
 				z -= 2;
@@ -388,27 +376,22 @@ public class PutLight extends Item {
 		case 9:
 			y -= 1;
 			switch (facing) {
-			case EAST:
-				for (int i = -1; i < 2; i++) {
+			case NORTH:
+				for (int i = -1; i < 2; i++)
 					worldIn.setBlockState(new BlockPos(x, y, z + i), Blocks.STONE.getDefaultState());
-				}
 				z -= 1;
-				for (int i = 1; i < 16; i++) {
+				for (int i = 1; i < 16; i++)
 					worldIn.setBlockState(new BlockPos(x, y + i, z), thick);
-				}
-				for (int i = 11; i < 21; i++) {
+				for (int i = 11; i < 21; i++)
 					worldIn.setBlockState(new BlockPos(x, y + i, z), thin);
-				}
 				worldIn.setBlockState(new BlockPos(x + 1, y + 20, z), cen);
 				worldIn.setBlockState(new BlockPos(x - 1, y + 20, z), cen);
 				worldIn.setBlockState(new BlockPos(x - 2, y + 20, z), cen);
 				z += 2;
-				for (int i = 1; i < 16; i++) {
+				for (int i = 1; i < 16; i++)
 					worldIn.setBlockState(new BlockPos(x, y + i, z), thick);
-				}
-				for (int i = 11; i < 21; i++) {
+				for (int i = 11; i < 21; i++)
 					worldIn.setBlockState(new BlockPos(x, y + i, z), thin);
-				}
 				worldIn.setBlockState(new BlockPos(x + 1, y + 20, z), cen);
 				worldIn.setBlockState(new BlockPos(x - 1, y + 20, z), cen);
 				worldIn.setBlockState(new BlockPos(x - 2, y + 20, z), cen);
@@ -419,27 +402,22 @@ public class PutLight extends Item {
 				worldIn.setBlockState(new BlockPos(x - 3, y + 20, z), l);
 				worldIn.setBlockState(new BlockPos(x - 4, y + 20, z), l);
 				break;
-			case SOUTH:
-				for (int i = -1; i < 2; i++) {
+			case EAST:
+				for (int i = -1; i < 2; i++)
 					worldIn.setBlockState(new BlockPos(x + i, y, z), Blocks.STONE.getDefaultState());
-				}
 				x -= 1;
-				for (int i = 1; i < 16; i++) {
+				for (int i = 1; i < 16; i++)
 					worldIn.setBlockState(new BlockPos(x, y + i, z), thick);
-				}
-				for (int i = 11; i < 21; i++) {
+				for (int i = 11; i < 21; i++)
 					worldIn.setBlockState(new BlockPos(x, y + i, z), thin);
-				}
 				worldIn.setBlockState(new BlockPos(x, y + 20, z + 1), cen);
 				worldIn.setBlockState(new BlockPos(x, y + 20, z - 1), cen);
 				worldIn.setBlockState(new BlockPos(x, y + 20, z - 2), cen);
 				x += 2;
-				for (int i = 1; i < 16; i++) {
+				for (int i = 1; i < 16; i++)
 					worldIn.setBlockState(new BlockPos(x, y + i, z), thick);
-				}
-				for (int i = 11; i < 21; i++) {
+				for (int i = 11; i < 21; i++)
 					worldIn.setBlockState(new BlockPos(x, y + i, z), thin);
-				}
 				worldIn.setBlockState(new BlockPos(x, y + 20, z + 1), cen);
 				worldIn.setBlockState(new BlockPos(x, y + 20, z - 1), cen);
 				worldIn.setBlockState(new BlockPos(x, y + 20, z - 2), cen);
@@ -450,27 +428,22 @@ public class PutLight extends Item {
 				worldIn.setBlockState(new BlockPos(x, y + 20, z - 3), l);
 				worldIn.setBlockState(new BlockPos(x, y + 20, z - 4), l);
 				break;
-			case NORTH:
-				for (int i = -1; i < 2; i++) {
+			case WEST:
+				for (int i = -1; i < 2; i++)
 					worldIn.setBlockState(new BlockPos(x + i, y, z), Blocks.STONE.getDefaultState());
-				}
 				x -= 1;
-				for (int i = 1; i < 16; i++) {
+				for (int i = 1; i < 16; i++)
 					worldIn.setBlockState(new BlockPos(x, y + i, z), thick);
-				}
-				for (int i = 11; i < 21; i++) {
+				for (int i = 11; i < 21; i++)
 					worldIn.setBlockState(new BlockPos(x, y + i, z), thin);
-				}
 				worldIn.setBlockState(new BlockPos(x, y + 20, z - 1), cen);
 				worldIn.setBlockState(new BlockPos(x, y + 20, z + 1), cen);
 				worldIn.setBlockState(new BlockPos(x, y + 20, z + 2), cen);
 				x += 2;
-				for (int i = 1; i < 16; i++) {
+				for (int i = 1; i < 16; i++)
 					worldIn.setBlockState(new BlockPos(x, y + i, z), thick);
-				}
-				for (int i = 11; i < 21; i++) {
+				for (int i = 11; i < 21; i++)
 					worldIn.setBlockState(new BlockPos(x, y + i, z), thin);
-				}
 				worldIn.setBlockState(new BlockPos(x, y + 20, z - 1), cen);
 				worldIn.setBlockState(new BlockPos(x, y + 20, z + 1), cen);
 				worldIn.setBlockState(new BlockPos(x, y + 20, z + 2), cen);
@@ -481,27 +454,22 @@ public class PutLight extends Item {
 				worldIn.setBlockState(new BlockPos(x, y + 20, z + 3), l);
 				worldIn.setBlockState(new BlockPos(x, y + 20, z + 4), l);
 				break;
-			case WEST:
-				for (int i = -1; i < 2; i++) {
+			case SOUTH:
+				for (int i = -1; i < 2; i++)
 					worldIn.setBlockState(new BlockPos(x, y, z + i), Blocks.STONE.getDefaultState());
-				}
 				z -= 1;
-				for (int i = 1; i < 16; i++) {
+				for (int i = 1; i < 16; i++)
 					worldIn.setBlockState(new BlockPos(x, y + i, z), thick);
-				}
-				for (int i = 11; i < 21; i++) {
+				for (int i = 11; i < 21; i++)
 					worldIn.setBlockState(new BlockPos(x, y + i, z), thin);
-				}
 				worldIn.setBlockState(new BlockPos(x - 1, y + 20, z), cen);
 				worldIn.setBlockState(new BlockPos(x + 1, y + 20, z), cen);
 				worldIn.setBlockState(new BlockPos(x + 2, y + 20, z), cen);
 				z += 2;
-				for (int i = 1; i < 16; i++) {
+				for (int i = 1; i < 16; i++)
 					worldIn.setBlockState(new BlockPos(x, y + i, z), thick);
-				}
-				for (int i = 11; i < 21; i++) {
+				for (int i = 11; i < 21; i++)
 					worldIn.setBlockState(new BlockPos(x, y + i, z), thin);
-				}
 				worldIn.setBlockState(new BlockPos(x - 1, y + 20, z), cen);
 				worldIn.setBlockState(new BlockPos(x + 1, y + 20, z), cen);
 				worldIn.setBlockState(new BlockPos(x + 2, y + 20, z), cen);
@@ -517,11 +485,10 @@ public class PutLight extends Item {
 			}
 			break;
 		case 10:
-			for (int i = 0; i < 5; i++) {
+			for (int i = 0; i < 5; i++)
 				worldIn.setBlockState(new BlockPos(x, y + i, z), thin);
-			}
 			y += 3;
-			if (facing.name() == "NORTH" || facing.name() == "SOUTH") {
+			if (facing.name() == "WEST" || facing.name() == "EAST") {
 				z += 1;
 				worldIn.setBlockState(new BlockPos(x, y + 1, z), top);
 				worldIn.setBlockState(new BlockPos(x, y + 2, z), Blocks.SEA_LANTERN.getDefaultState());
@@ -538,9 +505,8 @@ public class PutLight extends Item {
 			}
 			break;
 		case 11:
-			for (int i = 0; i < 5; i++) {
+			for (int i = 0; i < 5; i++)
 				worldIn.setBlockState(new BlockPos(x, y + i, z), thin);
-			}
 			y += 4;
 			worldIn.setBlockState(new BlockPos(x + 1, y, z), top);
 			worldIn.setBlockState(new BlockPos(x - 1, y, z), top);
@@ -553,14 +519,12 @@ public class PutLight extends Item {
 			worldIn.setBlockState(new BlockPos(x, y, z - 1), Blocks.SEA_LANTERN.getDefaultState());
 			break;
 		case 12:
-			for (int i = 0; i < 6; i++) {
+			for (int i = 0; i < 6; i++)
 				worldIn.setBlockState(new BlockPos(x, y + i, z), Blocks.COBBLESTONE_WALL.getDefaultState());
-			}
-			for (int i = 6; i < 11; i++) {
+			for (int i = 6; i < 11; i++)
 				worldIn.setBlockState(new BlockPos(x, y + i, z), Blocks.DARK_OAK_FENCE.getDefaultState());
-			}
 			y += 10;
-			if (facing.name() == "NORTH" || facing.name() == "SOUTH") {
+			if (facing.name() == "WEST" || facing.name() == "EAST") {
 				z += 1;
 				worldIn.setBlockState(new BlockPos(x, y, z), Blocks.DARK_OAK_FENCE.getDefaultState());
 				worldIn.setBlockState(new BlockPos(x, y - 1, z), Blocks.SEA_LANTERN.getDefaultState());
