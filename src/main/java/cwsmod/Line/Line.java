@@ -13,6 +13,6 @@ public class Line extends BlockRail {
 		this.setHardness(0.5f);
 		String oreDictName = String.format("railB%s", new Object[] { arg0.replaceAll("Rail", "").substring(1) });
 		OreDictionary.registerOre(oreDictName, this);
-		this.setCreativeTab(cwsmod.CTabs.CTabs.lTab);
+		this.setCreativeTab(cwsmod.CTabs.CTabs.lineTab);
 	}
 }

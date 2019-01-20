@@ -17,5 +17,7 @@ public class StartupClientOnly {
 				new ModelResourceLocation("cwsmod:PoleM", "inventory"));
 		ModelLoader.setCustomModelResourceLocation(StartupCommon.irf, 0,
 				new ModelResourceLocation("cwsmod:RoadFence", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(StartupCommon.ipa, 0,
+				new ModelResourceLocation("cwsmod:PoleA", "inventory"));
 	}
 }

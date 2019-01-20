@@ -19,7 +19,7 @@ public class RLight extends Block {
 		this.setUnlocalizedName("RoadLight");
 		this.setRegistryName("RoadLight");
 		this.setSoundType(SoundType.GLASS);
-		this.setCreativeTab(cwsmod.CTabs.CTabs.bTab);
+		this.setCreativeTab(cwsmod.CTabs.CTabs.blockTab);
 		this.setHardness(2);
 		this.setLightLevel(2);
 	}

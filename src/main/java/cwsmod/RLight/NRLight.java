@@ -28,7 +28,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class NRLight extends Block {
 	public NRLight(String arg0) {
 		super(Material.ROCK);
-		this.setCreativeTab(cwsmod.CTabs.CTabs.bTab);
+		this.setCreativeTab(cwsmod.CTabs.CTabs.blockTab);
 		this.setUnlocalizedName(arg0);
 		this.setRegistryName(arg0);
 		this.setSoundType(SoundType.GLASS);

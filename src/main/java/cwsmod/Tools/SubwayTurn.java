@@ -16,7 +16,7 @@ public class SubwayTurn extends Item {
 		this.setMaxStackSize(1);
 		this.setUnlocalizedName(arg1);
 		this.setRegistryName(arg1);
-		this.setCreativeTab(cwsmod.CTabs.CTabs.lTab);
+		this.setCreativeTab(cwsmod.CTabs.CTabs.toolTab);
 	}
 
 	private void genBlock(World w, int x, int y, int z, Block b) {
@@ -33,18 +33,37 @@ public class SubwayTurn extends Item {
 		int z = pos.getZ();
 		EnumFacing facing1 = playerIn.getHorizontalFacing();
 		switch (facing1) {
-
 		case NORTH:
-			worldIn.setBlockToAir(new BlockPos(x, y, z - 1));
+			for (int j = 0; j < 35; j++)
+				for (int i = 0; i < 10 + j; i++)
+					worldIn.setBlockToAir(new BlockPos(x - i, y, z - j));
+			for (int k = 35; k < 73; k++)
+				for (int l = 0; l < 44; l++)
+					worldIn.setBlockToAir(new BlockPos(x - k - l + 34, y, z - k));
 			break;
 		case SOUTH:
-			worldIn.setBlockToAir(new BlockPos(x, y, z + 1));
+			for (int j = 0; j < 35; j++)
+				for (int i = 0; i < 10 + j; i++)
+					worldIn.setBlockToAir(new BlockPos(x + i, y, z + j));
+			for (int k = 35; k < 73; k++)
+				for (int l = 0; l < 44; l++)
+					worldIn.setBlockToAir(new BlockPos(x + k + l - 34, y, z + k));
 			break;
 		case WEST:
-			worldIn.setBlockToAir(new BlockPos(x - 1, y, z));
+			for (int j = 0; j < 35; j++)
+				for (int i = 0; i < 10 + j; i++)
+					worldIn.setBlockToAir(new BlockPos(x - j, y, z + i));
+			for (int k = 35; k < 73; k++)
+				for (int l = 0; l < 44; l++)
+					worldIn.setBlockToAir(new BlockPos(x - k, y, z + k + l - 34));
 			break;
 		case EAST:
-			worldIn.setBlockToAir(new BlockPos(x + 1, y, z));
+			for (int j = 0; j < 35; j++)
+				for (int i = 0; i < 10 + j; i++)
+					worldIn.setBlockToAir(new BlockPos(x + j, y, z - i));
+			for (int k = 35; k < 73; k++)
+				for (int l = 0; l < 44; l++)
+					worldIn.setBlockToAir(new BlockPos(x + k, y, z - k - l + 34));
 			break;
 		default:
 			break;

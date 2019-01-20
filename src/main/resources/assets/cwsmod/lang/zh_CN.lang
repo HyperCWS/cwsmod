@@ -8,4 +8,6 @@ tile.RailWhiteThin.name=细白色线
 tile.RailWhiteThick.name=粗白色线
 tile.BBlock.name=沥青方块
 itemGroup.cws_btab=方块
-itemGroup.cws_ltab=工具和图标
+itemGroup.cws_ltab=图标与标线
+itemGroup.cws_tltab=交通灯
+itemGroup.cws_ttab=工具

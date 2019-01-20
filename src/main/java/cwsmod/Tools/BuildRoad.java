@@ -17,7 +17,7 @@ public class BuildRoad extends Item {
 		this.setMaxStackSize(1);
 		this.setUnlocalizedName("BuildRoad" + arg0);
 		this.setRegistryName("BuildRoad" + arg0);
-		this.setCreativeTab(cwsmod.CTabs.CTabs.lTab);
+		this.setCreativeTab(cwsmod.CTabs.CTabs.toolTab);
 		length = arg0;
 	}
 

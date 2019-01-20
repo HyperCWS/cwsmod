@@ -20,7 +20,7 @@ public class ItemRuler extends Item {
 		this.setMaxStackSize(1);
 		this.setUnlocalizedName(arg0);
 		this.setRegistryName(arg0);
-		this.setCreativeTab(cwsmod.CTabs.CTabs.lTab);
+		this.setCreativeTab(cwsmod.CTabs.CTabs.toolTab);
 	}
 
 	@Override

@@ -19,7 +19,7 @@ public class PutLight extends Item {
 		this.setMaxStackSize(1);
 		this.setUnlocalizedName("PutLight" + arg0);
 		this.setRegistryName("PutLight" + arg0);
-		this.setCreativeTab(cwsmod.CTabs.CTabs.lTab);
+		this.setCreativeTab(cwsmod.CTabs.CTabs.toolTab);
 		style = arg0;
 	}
 
@@ -349,7 +349,7 @@ public class PutLight extends Item {
 				else
 					worldIn.setBlockState(new BlockPos(x, y + i, z), thin);
 			y += 9;
-			if (facing.name() == "NORTH" || facing.name() == "SOUTH") {
+			if (facing.name() == "WEST" || facing.name() == "EAST") {
 				z -= 2;
 				worldIn.setBlockState(new BlockPos(x, y + 2, z), l);
 				z += 1;

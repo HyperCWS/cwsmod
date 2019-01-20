@@ -18,7 +18,7 @@ public class BStation extends Item {
 		this.setMaxStackSize(1);
 		this.setUnlocalizedName(arg1);
 		this.setRegistryName(arg1);
-		this.setCreativeTab(cwsmod.CTabs.CTabs.lTab);
+		this.setCreativeTab(cwsmod.CTabs.CTabs.toolTab);
 		style = arg0;
 	}
 

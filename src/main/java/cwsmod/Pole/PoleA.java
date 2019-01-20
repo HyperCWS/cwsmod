@@ -1,4 +1,4 @@
-package cwsmod.TLight;
+package cwsmod.Pole;
 
 import java.util.List;
 
@@ -24,16 +24,12 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class TLight extends Block {
-	private int styleID;
-
-	public TLight(String arg0, int sID) {
+public class PoleA extends Block {
+	public PoleA(String arg0) {
 		super(Material.ROCK);
-		this.setCreativeTab(cwsmod.CTabs.CTabs.tlightTab);
+		this.setCreativeTab(cwsmod.CTabs.CTabs.blockTab);
 		this.setUnlocalizedName(arg0);
 		this.setRegistryName(arg0);
-		styleID = sID;
-		this.setLightLevel(2);
 	}
 
 	@SideOnly(Side.CLIENT)
@@ -58,44 +54,35 @@ public class TLight extends Block {
 
 	@Override
 	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
-		return AABB.setBound(state, source, pos, PROPERTYFACING, styleID);
+		switch (state.getValue(PROPERTYFACING)) {
+		case EAST:
+			return new AxisAlignedBB(0, 0, 5 / 16F, 11 / 16F, 1, 11 / 16F);
+		case WEST:
+			return new AxisAlignedBB(5 / 16F, 0, 5 / 16F, 1, 1, 11 / 16F);
+		case NORTH:
+			return new AxisAlignedBB(5 / 16F, 0, 5 / 16F, 11 / 16F, 1, 1);
+		case SOUTH:
+			return new AxisAlignedBB(5 / 16F, 0, 0, 11 / 16F, 1, 11 / 16F);
+		default:
+			return FULL_BLOCK_AABB;
+		}
 	}
 
 	public static final PropertyDirection PROPERTYFACING = PropertyDirection.create("facing",
 			EnumFacing.Plane.HORIZONTAL);
-	public static final PropertyEnum PROPERTYCOLOUR = PropertyEnum.create("colour", EnumColour.class);
-
-	@Override
-	public int damageDropped(IBlockState state) {
-		EnumColour enumColour = (EnumColour) state.getValue(PROPERTYCOLOUR);
-		return enumColour.getMetadata();
-	}
-
-	@Override
-	@SideOnly(Side.CLIENT)
-	public void getSubBlocks(Item itemIn, CreativeTabs tab, List list) {
-		EnumColour[] allColours = EnumColour.values();
-		for (EnumColour colour : allColours) {
-			list.add(new ItemStack(itemIn, 1, colour.getMetadata()));
-		}
-	}
 
 	@Override
 	public IBlockState getStateFromMeta(int meta) {
 		EnumFacing facing = EnumFacing.getHorizontal(meta);
 		int colourbits = (meta & 0x0c) >> 2;
-		EnumColour colour = EnumColour.byMetadata(colourbits);
-		return this.getDefaultState().withProperty(PROPERTYCOLOUR, colour).withProperty(PROPERTYFACING, facing);
+		return this.getDefaultState().withProperty(PROPERTYFACING, facing);
 	}
 
 	@Override
 	public int getMetaFromState(IBlockState state) {
 		EnumFacing facing = (EnumFacing) state.getValue(PROPERTYFACING);
-		EnumColour colour = (EnumColour) state.getValue(PROPERTYCOLOUR);
-
 		int facingbits = facing.getHorizontalIndex();
-		int colourbits = colour.getMetadata() << 2;
-		return facingbits | colourbits;
+		return facingbits;
 	}
 
 	@Override
@@ -105,56 +92,13 @@ public class TLight extends Block {
 
 	@Override
 	protected BlockStateContainer createBlockState() {
-		return new BlockStateContainer(this, new IProperty[] { PROPERTYFACING, PROPERTYCOLOUR });
+		return new BlockStateContainer(this, new IProperty[] { PROPERTYFACING });
 	}
 
 	@Override
 	public IBlockState onBlockPlaced(World worldIn, BlockPos pos, EnumFacing blockFaceClickedOn, float hitX, float hitY,
 			float hitZ, int meta, EntityLivingBase placer) {
-		EnumColour colour = EnumColour.byMetadata(meta);
-
 		EnumFacing enumfacing = (placer == null) ? EnumFacing.NORTH : EnumFacing.fromAngle(placer.rotationYaw);
-
-		return this.getDefaultState().withProperty(PROPERTYFACING, enumfacing).withProperty(PROPERTYCOLOUR, colour);
-	}
-
-	public static enum EnumColour implements IStringSerializable {
-		EMPTY(0, "empty"), RED(1, "red"), GREEN(2, "green"), YELLOW(3, "yellow");
-
-		public int getMetadata() {
-			return this.meta;
-		}
-
-		@Override
-		public String toString() {
-			return this.name;
-		}
-
-		public static EnumColour byMetadata(int meta) {
-			if (meta < 0 || meta >= META_LOOKUP.length) {
-				meta = 0;
-			}
-
-			return META_LOOKUP[meta];
-		}
-
-		public String getName() {
-			return this.name;
-		}
-
-		private final int meta;
-		private final String name;
-		private static final EnumColour[] META_LOOKUP = new EnumColour[values().length];
-
-		private EnumColour(int i_meta, String i_name) {
-			this.meta = i_meta;
-			this.name = i_name;
-		}
-
-		static {
-			for (EnumColour colour : values()) {
-				META_LOOKUP[colour.getMetadata()] = colour;
-			}
-		}
+		return this.getDefaultState().withProperty(PROPERTYFACING, enumfacing);
 	}
 }

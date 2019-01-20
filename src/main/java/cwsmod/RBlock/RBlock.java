@@ -17,7 +17,7 @@ public class RBlock extends Block {
 		super(Material.ROCK);
 		this.setUnlocalizedName("RoadBlock");
 		this.setRegistryName("RoadBlock");
-		this.setCreativeTab(cwsmod.CTabs.CTabs.bTab);
+		this.setCreativeTab(cwsmod.CTabs.CTabs.blockTab);
 		this.setHardness(2);
 	}
 

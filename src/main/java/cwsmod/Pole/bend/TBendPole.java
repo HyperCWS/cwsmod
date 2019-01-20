@@ -27,7 +27,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class TBendPole extends Block {
 	public TBendPole(String arg0) {
 		super(Material.ROCK);
-		this.setCreativeTab(cwsmod.CTabs.CTabs.bTab);
+		this.setCreativeTab(cwsmod.CTabs.CTabs.blockTab);
 		this.setUnlocalizedName(arg0);
 		this.setRegistryName(arg0);
 	}

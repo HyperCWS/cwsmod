@@ -19,7 +19,7 @@ public class PutPole extends Item {
 		this.setMaxStackSize(1);
 		this.setUnlocalizedName(arg2);
 		this.setRegistryName(arg2);
-		this.setCreativeTab(cwsmod.CTabs.CTabs.lTab);
+		this.setCreativeTab(cwsmod.CTabs.CTabs.toolTab);
 		block = Block.getBlockFromName(arg1);
 		len = arg0;
 	}

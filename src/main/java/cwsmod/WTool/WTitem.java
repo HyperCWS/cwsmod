@@ -12,7 +12,7 @@ public class WTitem extends Item {
 
 	WTitem() {
 		this.setMaxStackSize(1);
-		this.setCreativeTab(cwsmod.CTabs.CTabs.lTab);
+		this.setCreativeTab(cwsmod.CTabs.CTabs.toolTab);
 	}
 
 	public static int createData(String username) {

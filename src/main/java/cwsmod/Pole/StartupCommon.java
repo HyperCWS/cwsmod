@@ -1,5 +1,7 @@
 package cwsmod.Pole;
 
+import cwsmod.sign.Cwsign;
+import cwsmod.sign.ICwsign;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.util.BlockRenderLayer;
@@ -8,6 +10,7 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class StartupCommon {
+	public static PoleA poleA = new PoleA("PoleA");
 	public static Fence poleT = new Fence("PoleT");
 	public static Fence poleD = new Fence("PoleD");
 	public static Fence poleC = new Fence("PoleC");
@@ -20,9 +23,11 @@ public class StartupCommon {
 	public static ItemBlock ipl = (ItemBlock) new ItemBlock(poleL).setRegistryName(poleL.getRegistryName());
 	public static ItemBlock ipm = (ItemBlock) new ItemBlock(poleM).setRegistryName(poleM.getRegistryName());
 	public static ItemBlock irf = (ItemBlock) new ItemBlock(roadF).setRegistryName(roadF.getRegistryName());
+	public static IPoleA ipa = (IPoleA) new IPoleA(poleA).setRegistryName(poleA.getRegistryName());
 
 	public static void preInitCommon() {
 		GameRegistry.register(poleT);
+		GameRegistry.register(poleA);
 		GameRegistry.register(poleD);
 		GameRegistry.register(poleC);
 		GameRegistry.register(poleL);
@@ -34,5 +39,6 @@ public class StartupCommon {
 		GameRegistry.register(ipl);
 		GameRegistry.register(ipm);
 		GameRegistry.register(irf);
+		GameRegistry.register(ipa);
 	}
 }

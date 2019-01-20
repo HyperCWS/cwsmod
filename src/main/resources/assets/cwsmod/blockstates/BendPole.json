@@ -25,25 +25,6 @@
 		"colour=b,facing=south": {
 			"model": "cwsmod:BendPole_b",
 			"y": 180
-		},
-		"colour=b,facing=west": {
-			"model": "cwsmod:BendPole_b",
-			"y": 270
-		},
-		"colour=c,facing=north": {
-			"model": "cwsmod:BendPole_c"
-		},
-		"colour=c,facing=east": {
-			"model": "cwsmod:BendPole_c",
-			"y": 90
-		},
-		"colour=c,facing=south": {
-			"model": "cwsmod:BendPole_c",
-			"y": 180
-		},
-		"colour=c,facing=west": {
-			"model": "cwsmod:BendPole_c",
-			"y": 270
 		}
 	}
 }

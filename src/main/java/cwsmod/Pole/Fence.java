@@ -21,6 +21,6 @@ public class Fence extends BlockFence {
 		this.setHardness(2);
 		OreDictionary.registerOre(String.format("fenceB%s", new Object[] { arg0.replaceAll("Fence", "").substring(1) }),
 				this);
-		this.setCreativeTab(cwsmod.CTabs.CTabs.bTab);
+		this.setCreativeTab(cwsmod.CTabs.CTabs.blockTab);
 	}
 }

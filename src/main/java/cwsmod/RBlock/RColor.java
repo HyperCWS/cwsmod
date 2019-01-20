@@ -16,7 +16,7 @@ public class RColor extends Block {
 		super(Material.ROCK);
 		this.setUnlocalizedName(arg0);
 		this.setRegistryName(arg0);
-		this.setCreativeTab(cwsmod.CTabs.CTabs.bTab);
+		this.setCreativeTab(cwsmod.CTabs.CTabs.blockTab);
 		this.setHardness(1);
 	}
 
