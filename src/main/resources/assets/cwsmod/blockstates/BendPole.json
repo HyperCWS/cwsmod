@@ -25,6 +25,10 @@
 		"colour=b,facing=south": {
 			"model": "cwsmod:BendPole_b",
 			"y": 180
+		},
+		"colour=b,facing=west": {
+			"model": "cwsmod:BendPole_b",
+			"y": 270
 		}
 	}
 }

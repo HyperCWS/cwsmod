@@ -44,6 +44,11 @@ public class Cwsign extends Block {
 
 	@Override
 	public boolean isFullCube(IBlockState iBlockState) {
+		return false;
+	}
+
+	@Override
+	public boolean isFullBlock(IBlockState iBlockState) {
 		return true;
 	}
 
@@ -58,7 +63,7 @@ public class Cwsign extends Block {
 		case EAST:
 			return new AxisAlignedBB(0, 0, 0, 10 / 16F, 1, 1);
 		case WEST:
-			return new AxisAlignedBB(6/16F, 0, 0, 1, 1, 1);
+			return new AxisAlignedBB(6 / 16F, 0, 0, 1, 1, 1);
 		case NORTH:
 			return new AxisAlignedBB(0, 0, 6 / 16F, 1, 1, 1);
 		case SOUTH:

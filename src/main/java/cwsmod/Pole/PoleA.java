@@ -25,16 +25,19 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class PoleA extends Block {
-	public PoleA(String arg0) {
+	private int AABBstyle;
+
+	public PoleA(String arg0, int arg1) {
 		super(Material.ROCK);
 		this.setCreativeTab(cwsmod.CTabs.CTabs.blockTab);
 		this.setUnlocalizedName(arg0);
 		this.setRegistryName(arg0);
+		AABBstyle = arg1;
 	}
 
 	@SideOnly(Side.CLIENT)
 	public BlockRenderLayer getBlockLayer() {
-		return BlockRenderLayer.CUTOUT;
+		return BlockRenderLayer.SOLID;
 	}
 
 	@Override
@@ -43,8 +46,13 @@ public class PoleA extends Block {
 	}
 
 	@Override
-	public boolean isFullCube(IBlockState iBlockState) {
+	public boolean isFullBlock(IBlockState iBlockState) {
 		return true;
+	}
+
+	@Override
+	public boolean isFullCube(IBlockState iBlockState) {
+		return false;
 	}
 
 	@Override
@@ -54,18 +62,37 @@ public class PoleA extends Block {
 
 	@Override
 	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
-		switch (state.getValue(PROPERTYFACING)) {
-		case EAST:
-			return new AxisAlignedBB(0, 0, 5 / 16F, 11 / 16F, 1, 11 / 16F);
-		case WEST:
-			return new AxisAlignedBB(5 / 16F, 0, 5 / 16F, 1, 1, 11 / 16F);
-		case NORTH:
-			return new AxisAlignedBB(5 / 16F, 0, 5 / 16F, 11 / 16F, 1, 1);
-		case SOUTH:
-			return new AxisAlignedBB(5 / 16F, 0, 0, 11 / 16F, 1, 11 / 16F);
+		switch (AABBstyle) {
+		case 0:
+			switch (state.getValue(PROPERTYFACING)) {
+			case EAST:
+				return new AxisAlignedBB(0, 0, 5 / 16F, 11 / 16F, 1, 11 / 16F);
+			case WEST:
+				return new AxisAlignedBB(5 / 16F, 0, 5 / 16F, 1, 1, 11 / 16F);
+			case NORTH:
+				return new AxisAlignedBB(5 / 16F, 0, 5 / 16F, 11 / 16F, 1, 1);
+			case SOUTH:
+				return new AxisAlignedBB(5 / 16F, 0, 0, 11 / 16F, 1, 11 / 16F);
+			default:
+				return FULL_BLOCK_AABB;
+			}
+		case 1:
+			switch (state.getValue(PROPERTYFACING)) {
+			case EAST:
+				return new AxisAlignedBB(14 / 16F, 0, 0, 1, 1, 1);
+			case WEST:
+				return new AxisAlignedBB(0, 0, 0, 2 / 16F, 1, 1);
+			case NORTH:
+				return new AxisAlignedBB(0, 0, 0, 1, 1, 2 / 16F);
+			case SOUTH:
+				return new AxisAlignedBB(0, 0, 14 / 16F, 1, 1, 1);
+			default:
+				return FULL_BLOCK_AABB;
+			}
 		default:
 			return FULL_BLOCK_AABB;
 		}
+
 	}
 
 	public static final PropertyDirection PROPERTYFACING = PropertyDirection.create("facing",

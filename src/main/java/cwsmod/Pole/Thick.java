@@ -43,6 +43,11 @@ public class Thick extends Block {
 	}
 
 	@Override
+	public boolean isFullBlock(IBlockState iBlockState) {
+		return true;
+	}
+
+	@Override
 	public EnumBlockRenderType getRenderType(IBlockState iBlockState) {
 		return EnumBlockRenderType.MODEL;
 	}
