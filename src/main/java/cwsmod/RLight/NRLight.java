@@ -32,7 +32,7 @@ public class NRLight extends Block {
 		this.setUnlocalizedName(arg0);
 		this.setRegistryName(arg0);
 		this.setSoundType(SoundType.GLASS);
-		this.setLightLevel(2);
+		this.setLightLevel(1);
 	}
 
 	@SideOnly(Side.CLIENT)

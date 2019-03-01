@@ -15,6 +15,7 @@ public class StartupCommon {
 	public static Fence poleC = new Fence("PoleC");
 	public static Fence poleD = new Fence("PoleD");
 	public static PoleA poleE = new PoleA("PoleE", 1);
+	public static PoleA poleF = new PoleA("PoleF", 1);
 	public static Fence poleL = new Fence("PoleL");
 	public static Thick poleM = new Thick("PoleM", 5);
 	public static Fence poleT = new Fence("PoleT");
@@ -28,6 +29,7 @@ public class StartupCommon {
 	public static IPoleA ipa = (IPoleA) new IPoleA(poleA).setRegistryName(poleA.getRegistryName());
 	public static IPoleA ipb = (IPoleA) new IPoleA(poleB).setRegistryName(poleB.getRegistryName());
 	public static IPoleA ipe = (IPoleA) new IPoleA(poleE).setRegistryName(poleE.getRegistryName());
+	public static IPoleA ipf = (IPoleA) new IPoleA(poleF).setRegistryName(poleF.getRegistryName());
 
 	public static void preInitCommon() {
 		GameRegistry.register(poleT);
@@ -35,6 +37,7 @@ public class StartupCommon {
 		GameRegistry.register(poleB);
 		GameRegistry.register(poleD);
 		GameRegistry.register(poleE);
+		GameRegistry.register(poleF);
 		GameRegistry.register(poleC);
 		GameRegistry.register(poleL);
 		GameRegistry.register(poleM);
@@ -48,5 +51,6 @@ public class StartupCommon {
 		GameRegistry.register(ipa);
 		GameRegistry.register(ipb);
 		GameRegistry.register(ipe);
+		GameRegistry.register(ipf);
 	}
 }

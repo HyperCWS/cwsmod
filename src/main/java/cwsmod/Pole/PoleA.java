@@ -32,6 +32,7 @@ public class PoleA extends Block {
 		this.setCreativeTab(cwsmod.CTabs.CTabs.blockTab);
 		this.setUnlocalizedName(arg0);
 		this.setRegistryName(arg0);
+		this.setHardness(2);
 		AABBstyle = arg1;
 	}
 

@@ -1,0 +1,19 @@
+{
+	"variants": {
+		"facing=north": {
+			"model": "cwsmod:PoleF"
+		},
+		"facing=east": {
+			"model": "cwsmod:PoleF",
+			"y": 90
+		},
+		"facing=south": {
+			"model": "cwsmod:PoleF",
+			"y": 180
+		},
+		"facing=west": {
+			"model": "cwsmod:PoleF",
+			"y": 270
+		}
+	}
+}

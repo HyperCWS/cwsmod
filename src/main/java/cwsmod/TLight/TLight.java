@@ -32,8 +32,9 @@ public class TLight extends Block {
 		this.setCreativeTab(cwsmod.CTabs.CTabs.tlightTab);
 		this.setUnlocalizedName(arg0);
 		this.setRegistryName(arg0);
-		styleID = sID;
 		this.setLightLevel(2);
+		this.setHardness(1);
+		styleID = sID;
 	}
 
 	@SideOnly(Side.CLIENT)

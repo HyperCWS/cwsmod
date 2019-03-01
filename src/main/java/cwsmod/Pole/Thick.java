@@ -18,6 +18,7 @@ public class Thick extends Block {
 		super(Material.ROCK);
 		this.setUnlocalizedName(arg0);
 		this.setRegistryName(arg0);
+		this.setHardness(3);
 		this.setCreativeTab(cwsmod.CTabs.CTabs.blockTab);
 		width = arg1;
 	}
