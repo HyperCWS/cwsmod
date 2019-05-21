@@ -26,19 +26,21 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class PoleA extends Block {
 	private int AABBstyle;
+	private boolean fullCube;
 
-	public PoleA(String arg0, int arg1) {
+	public PoleA(String arg0, int arg1, boolean fCube) {
 		super(Material.ROCK);
 		this.setCreativeTab(cwsmod.CTabs.CTabs.blockTab);
 		this.setUnlocalizedName(arg0);
 		this.setRegistryName(arg0);
 		this.setHardness(2);
 		AABBstyle = arg1;
+		fullCube = fCube;
 	}
 
 	@SideOnly(Side.CLIENT)
 	public BlockRenderLayer getBlockLayer() {
-		return BlockRenderLayer.SOLID;
+		return BlockRenderLayer.CUTOUT;
 	}
 
 	@Override
@@ -53,7 +55,7 @@ public class PoleA extends Block {
 
 	@Override
 	public boolean isFullCube(IBlockState iBlockState) {
-		return false;
+		return fullCube;
 	}
 
 	@Override

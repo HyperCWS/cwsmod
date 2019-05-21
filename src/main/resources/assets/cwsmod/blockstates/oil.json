@@ -1,0 +1,19 @@
+{
+	"variants": {
+		"facing=north": {
+			"model": "cwsmod:sign/oil"
+		},
+		"facing=east": {
+			"model": "cwsmod:sign/oil",
+			"y": 90
+		},
+		"facing=south": {
+			"model": "cwsmod:sign/oil",
+			"y": 180
+		},
+		"facing=west": {
+			"model": "cwsmod:sign/oil",
+			"y": 270
+		}
+	}
+}

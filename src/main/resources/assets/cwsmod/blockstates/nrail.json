@@ -1,0 +1,19 @@
+{
+	"variants": {
+		"facing=north": {
+			"model": "cwsmod:sign/nrail"
+		},
+		"facing=east": {
+			"model": "cwsmod:sign/nrail",
+			"y": 90
+		},
+		"facing=south": {
+			"model": "cwsmod:sign/nrail",
+			"y": 180
+		},
+		"facing=west": {
+			"model": "cwsmod:sign/nrail",
+			"y": 270
+		}
+	}
+}

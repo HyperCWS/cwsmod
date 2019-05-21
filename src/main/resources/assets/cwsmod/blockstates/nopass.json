@@ -1,0 +1,19 @@
+{
+	"variants": {
+		"facing=north": {
+			"model": "cwsmod:sign/nopass"
+		},
+		"facing=east": {
+			"model": "cwsmod:sign/nopass",
+			"y": 90
+		},
+		"facing=south": {
+			"model": "cwsmod:sign/nopass",
+			"y": 180
+		},
+		"facing=west": {
+			"model": "cwsmod:sign/nopass",
+			"y": 270
+		}
+	}
+}

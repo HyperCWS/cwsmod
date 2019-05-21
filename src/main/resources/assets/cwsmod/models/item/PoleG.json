@@ -1,0 +1,45 @@
+{
+	"parent": "cwsmod:block/PoleG",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [75, 315, 0],
+			"translation": [0.00, 2.50, 0.00],
+			"scale": [0.3, 0.3, 0.3]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [75, 315, 0],
+			"translation": [0.00, 2.50, 0.00],
+			"scale": [0.3, 0.3, 0.3]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 111, 0],
+			"translation": [0.00, 2.25, 0.00],
+			"scale": [0.3, 0.3, 0.3]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 107, 0],
+			"translation": [0.00, 2.25, 0.00],
+			"scale": [0.3, 0.3, 0.3]
+		},
+		"gui": {
+			"rotation": [30, 225, 0],
+			"translation": [-1.00, 1.00, 0.00],
+			"scale": [0.70, 0.70, 0.70]
+		},
+		"head": {
+			"rotation": [0, 180, 0],
+			"translation": [0.00, 0.00, 0.00],
+			"scale": [0.90, 0.90, 0.90]
+		},
+		"fixed": {
+			"rotation": [0, 4, 0],
+			"translation": [0.00, 2.25, 0.00],
+			"scale": [0.50, 0.50, 0.50]
+		},
+		"ground": {
+			"rotation": [0, 0, 0],
+			"translation": [0.00, 3.00, 0.00],
+			"scale": [0.25, 0.25, 0.25]
+		}
+	}
+}

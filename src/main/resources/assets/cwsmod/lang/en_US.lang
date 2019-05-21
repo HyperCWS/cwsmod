@@ -63,6 +63,7 @@ tile.PoleA.name=Pole
 tile.PoleB.name=Pole
 tile.PoleE.name=Pole
 tile.PoleF.name=Pole
+tile.PoleG.name=Pole
 tile.PoleT.name=Pole(Top)
 tile.PoleC.name=Pole(Centre)
 tile.PoleD.name=Pole(Down)

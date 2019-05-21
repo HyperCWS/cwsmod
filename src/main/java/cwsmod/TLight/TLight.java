@@ -49,12 +49,12 @@ public class TLight extends Block {
 
 	@Override
 	public boolean isFullCube(IBlockState iBlockState) {
-		return false;
+		return true;
 	}
 
 	@Override
 	public boolean isFullBlock(IBlockState iBlockState) {
-		return true;
+		return false;
 	}
 
 	@Override

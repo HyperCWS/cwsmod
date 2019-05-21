@@ -27,7 +27,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class Cwsign extends Block {
 	public Cwsign(String arg0) {
 		super(Material.ROCK);
-		this.setCreativeTab(cwsmod.CTabs.CTabs.blockTab);
+		this.setCreativeTab(cwsmod.CTabs.CTabs.lineTab);
 		this.setUnlocalizedName(arg0);
 		this.setRegistryName(arg0);
 		this.setHardness(2);
@@ -45,7 +45,7 @@ public class Cwsign extends Block {
 
 	@Override
 	public boolean isFullCube(IBlockState iBlockState) {
-		return false;
+		return true;
 	}
 
 	@Override

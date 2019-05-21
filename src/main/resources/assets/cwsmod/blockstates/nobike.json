@@ -1,0 +1,19 @@
+{
+	"variants": {
+		"facing=north": {
+			"model": "cwsmod:sign/nobike"
+		},
+		"facing=east": {
+			"model": "cwsmod:sign/nobike",
+			"y": 90
+		},
+		"facing=south": {
+			"model": "cwsmod:sign/nobike",
+			"y": 180
+		},
+		"facing=west": {
+			"model": "cwsmod:sign/nobike",
+			"y": 270
+		}
+	}
+}

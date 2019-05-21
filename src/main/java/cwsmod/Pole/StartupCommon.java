@@ -10,12 +10,13 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class StartupCommon {
-	public static PoleA poleA = new PoleA("PoleA", 0);
-	public static PoleA poleB = new PoleA("PoleB", -1);
+	public static PoleA poleA = new PoleA("PoleA", 0, true);
+	public static PoleA poleB = new PoleA("PoleB", -1, true);
 	public static Fence poleC = new Fence("PoleC");
 	public static Fence poleD = new Fence("PoleD");
-	public static PoleA poleE = new PoleA("PoleE", 1);
-	public static PoleA poleF = new PoleA("PoleF", 1);
+	public static PoleA poleE = new PoleA("PoleE", 1, false);
+	public static PoleA poleF = new PoleA("PoleF", 1, false);
+	public static PoleA poleG = new PoleA("PoleG", 1, false);
 	public static Fence poleL = new Fence("PoleL");
 	public static Thick poleM = new Thick("PoleM", 5);
 	public static Fence poleT = new Fence("PoleT");
@@ -30,6 +31,7 @@ public class StartupCommon {
 	public static IPoleA ipb = (IPoleA) new IPoleA(poleB).setRegistryName(poleB.getRegistryName());
 	public static IPoleA ipe = (IPoleA) new IPoleA(poleE).setRegistryName(poleE.getRegistryName());
 	public static IPoleA ipf = (IPoleA) new IPoleA(poleF).setRegistryName(poleF.getRegistryName());
+	public static IPoleA ipg = (IPoleA) new IPoleA(poleG).setRegistryName(poleG.getRegistryName());
 
 	public static void preInitCommon() {
 		GameRegistry.register(poleT);
@@ -38,6 +40,7 @@ public class StartupCommon {
 		GameRegistry.register(poleD);
 		GameRegistry.register(poleE);
 		GameRegistry.register(poleF);
+		GameRegistry.register(poleG);
 		GameRegistry.register(poleC);
 		GameRegistry.register(poleL);
 		GameRegistry.register(poleM);
@@ -52,5 +55,6 @@ public class StartupCommon {
 		GameRegistry.register(ipb);
 		GameRegistry.register(ipe);
 		GameRegistry.register(ipf);
+		GameRegistry.register(ipg);
 	}
 }

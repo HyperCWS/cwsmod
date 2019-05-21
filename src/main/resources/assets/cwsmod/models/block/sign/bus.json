@@ -1,0 +1,6 @@
+{
+    "parent": "cwsmod:block/sign/SIGN",
+    "textures": {
+        "sgn": "cwsmod:blocks/sign/bus"
+    }
+}

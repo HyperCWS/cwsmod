@@ -1,0 +1,19 @@
+{
+	"variants": {
+		"facing=north": {
+			"model": "cwsmod:sign/bus"
+		},
+		"facing=east": {
+			"model": "cwsmod:sign/bus",
+			"y": 90
+		},
+		"facing=south": {
+			"model": "cwsmod:sign/bus",
+			"y": 180
+		},
+		"facing=west": {
+			"model": "cwsmod:sign/bus",
+			"y": 270
+		}
+	}
+}

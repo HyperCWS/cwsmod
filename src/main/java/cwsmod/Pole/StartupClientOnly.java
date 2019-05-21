@@ -25,5 +25,7 @@ public class StartupClientOnly {
 				new ModelResourceLocation("cwsmod:PoleE", "inventory"));
 		ModelLoader.setCustomModelResourceLocation(StartupCommon.ipf, 0,
 				new ModelResourceLocation("cwsmod:PoleF", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(StartupCommon.ipg, 0,
+				new ModelResourceLocation("cwsmod:PoleG", "inventory"));
 	}
 }

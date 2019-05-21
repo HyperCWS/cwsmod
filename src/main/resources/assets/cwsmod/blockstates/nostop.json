@@ -1,0 +1,19 @@
+{
+	"variants": {
+		"facing=north": {
+			"model": "cwsmod:sign/nostop"
+		},
+		"facing=east": {
+			"model": "cwsmod:sign/nostop",
+			"y": 90
+		},
+		"facing=south": {
+			"model": "cwsmod:sign/nostop",
+			"y": 180
+		},
+		"facing=west": {
+			"model": "cwsmod:sign/nostop",
+			"y": 270
+		}
+	}
+}

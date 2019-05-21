@@ -1,0 +1,19 @@
+{
+	"variants": {
+		"facing=north": {
+			"model": "cwsmod:sign/nomoto"
+		},
+		"facing=east": {
+			"model": "cwsmod:sign/nomoto",
+			"y": 90
+		},
+		"facing=south": {
+			"model": "cwsmod:sign/nomoto",
+			"y": 180
+		},
+		"facing=west": {
+			"model": "cwsmod:sign/nomoto",
+			"y": 270
+		}
+	}
+}

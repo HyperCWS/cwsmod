@@ -2,7 +2,7 @@
     "ambientocclusion": true,
     "textures": {
         "base": "cwsmod:blocks/rdb",
-        "r":"cwsmod:blocks/red"
+        "r":"cwsmod:blocks/red_pure"
     },
     "elements": [
         {   "from": [ 5,0,5 ],

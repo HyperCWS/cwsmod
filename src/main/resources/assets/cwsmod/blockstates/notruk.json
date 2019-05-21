@@ -1,0 +1,19 @@
+{
+	"variants": {
+		"facing=north": {
+			"model": "cwsmod:sign/notruk"
+		},
+		"facing=east": {
+			"model": "cwsmod:sign/notruk",
+			"y": 90
+		},
+		"facing=south": {
+			"model": "cwsmod:sign/notruk",
+			"y": 180
+		},
+		"facing=west": {
+			"model": "cwsmod:sign/notruk",
+			"y": 270
+		}
+	}
+}
