@@ -1,0 +1,19 @@
+{
+	"variants": {
+		"facing=north": {
+			"model": "cwsmod:sign/sbrtl"
+		},
+		"facing=east": {
+			"model": "cwsmod:sign/sbrtl",
+			"y": 90
+		},
+		"facing=south": {
+			"model": "cwsmod:sign/sbrtl",
+			"y": 180
+		},
+		"facing=west": {
+			"model": "cwsmod:sign/sbrtl",
+			"y": 270
+		}
+	}
+}

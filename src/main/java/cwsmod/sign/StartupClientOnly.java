@@ -77,6 +77,42 @@ public class StartupClientOnly {
 				new ModelResourceLocation("cwsmod:wind", "inventory"));
 		ModelLoader.setCustomModelResourceLocation(StartupCommon.IWorking, 0,
 				new ModelResourceLocation("cwsmod:working", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(StartupCommon.IGostraight, 0,
+				new ModelResourceLocation("cwsmod:gostraight", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(StartupCommon.IHigh4, 0,
+				new ModelResourceLocation("cwsmod:high4", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(StartupCommon.IHigh8, 0,
+				new ModelResourceLocation("cwsmod:high8", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(StartupCommon.INlcar, 0,
+				new ModelResourceLocation("cwsmod:nlcar", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(StartupCommon.INoovertacking, 0,
+				new ModelResourceLocation("cwsmod:noovertacking", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(StartupCommon.INosleft, 0,
+				new ModelResourceLocation("cwsmod:nosleft", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(StartupCommon.INosright, 0,
+				new ModelResourceLocation("cwsmod:nosright", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(StartupCommon.INostraight, 0,
+				new ModelResourceLocation("cwsmod:nostraight", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(StartupCommon.INrcar, 0,
+				new ModelResourceLocation("cwsmod:nrcar", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(StartupCommon.IOvertacking, 0,
+				new ModelResourceLocation("cwsmod:overtacking", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(StartupCommon.IParking, 0,
+				new ModelResourceLocation("cwsmod:parking", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(StartupCommon.ISstraight, 0,
+				new ModelResourceLocation("cwsmod:sstraight", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(StartupCommon.IWorking2, 0,
+				new ModelResourceLocation("cwsmod:working2", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(StartupCommon.IWorking3, 0,
+				new ModelResourceLocation("cwsmod:working3", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(StartupCommon.ISlrtl, 0,
+				new ModelResourceLocation("cwsmod:slrtl", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(StartupCommon.ISlrtr, 0,
+				new ModelResourceLocation("cwsmod:slrtr", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(StartupCommon.ISbrtl, 0,
+				new ModelResourceLocation("cwsmod:sbrtl", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(StartupCommon.ISbrtr, 0,
+				new ModelResourceLocation("cwsmod:sbrtr", "inventory"));
 
 	}
 }

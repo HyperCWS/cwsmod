@@ -1,18 +1,18 @@
 {
 	"variants": {
 		"facing=north": {
-			"model": "cwsmod:sign/40"
+			"model": "cwsmod:sign/speed40"
 		},
 		"facing=east": {
-			"model": "cwsmod:sign/40",
+			"model": "cwsmod:sign/speed40",
 			"y": 90
 		},
 		"facing=south": {
-			"model": "cwsmod:sign/40",
+			"model": "cwsmod:sign/speed40",
 			"y": 180
 		},
 		"facing=west": {
-			"model": "cwsmod:sign/40",
+			"model": "cwsmod:sign/speed40",
 			"y": 270
 		}
 	}

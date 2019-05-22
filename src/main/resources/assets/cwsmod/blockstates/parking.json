@@ -1,0 +1,19 @@
+{
+	"variants": {
+		"facing=north": {
+			"model": "cwsmod:sign/parking"
+		},
+		"facing=east": {
+			"model": "cwsmod:sign/parking",
+			"y": 90
+		},
+		"facing=south": {
+			"model": "cwsmod:sign/parking",
+			"y": 180
+		},
+		"facing=west": {
+			"model": "cwsmod:sign/parking",
+			"y": 270
+		}
+	}
+}

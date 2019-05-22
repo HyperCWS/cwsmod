@@ -1,0 +1,19 @@
+{
+	"variants": {
+		"facing=north": {
+			"model": "cwsmod:sign/high4"
+		},
+		"facing=east": {
+			"model": "cwsmod:sign/high4",
+			"y": 90
+		},
+		"facing=south": {
+			"model": "cwsmod:sign/high4",
+			"y": 180
+		},
+		"facing=west": {
+			"model": "cwsmod:sign/high4",
+			"y": 270
+		}
+	}
+}

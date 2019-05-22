@@ -1,0 +1,19 @@
+{
+	"variants": {
+		"facing=north": {
+			"model": "cwsmod:sign/nosright"
+		},
+		"facing=east": {
+			"model": "cwsmod:sign/nosright",
+			"y": 90
+		},
+		"facing=south": {
+			"model": "cwsmod:sign/nosright",
+			"y": 180
+		},
+		"facing=west": {
+			"model": "cwsmod:sign/nosright",
+			"y": 270
+		}
+	}
+}

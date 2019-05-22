@@ -1,0 +1,6 @@
+{
+    "parent": "cwsmod:block/sign/SIGNVertical",
+    "textures": {
+        "sgn": "cwsmod:blocks/sign/slrtl"
+    }
+}

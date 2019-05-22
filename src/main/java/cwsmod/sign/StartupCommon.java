@@ -75,6 +75,44 @@ public class StartupCommon {
 	public static ICwsign IWind = (ICwsign) new ICwsign(Wind).setRegistryName(Wind.getRegistryName());
 	public static Cwsign Working = new Cwsign("working");
 	public static ICwsign IWorking = (ICwsign) new ICwsign(Working).setRegistryName(Working.getRegistryName());
+	public static Cwsign Gostraight = new Cwsign("gostraight");
+	public static ICwsign IGostraight = (ICwsign) new ICwsign(Gostraight).setRegistryName(Gostraight.getRegistryName());
+	public static Cwsign High4 = new Cwsign("high4");
+	public static ICwsign IHigh4 = (ICwsign) new ICwsign(High4).setRegistryName(High4.getRegistryName());
+	public static Cwsign High8 = new Cwsign("high8");
+	public static ICwsign IHigh8 = (ICwsign) new ICwsign(High8).setRegistryName(High8.getRegistryName());
+	public static Cwsign Nlcar = new Cwsign("nlcar");
+	public static ICwsign INlcar = (ICwsign) new ICwsign(Nlcar).setRegistryName(Nlcar.getRegistryName());
+	public static Cwsign Noovertacking = new Cwsign("noovertacking");
+	public static ICwsign INoovertacking = (ICwsign) new ICwsign(Noovertacking)
+			.setRegistryName(Noovertacking.getRegistryName());
+	public static Cwsign Nosleft = new Cwsign("nosleft");
+	public static ICwsign INosleft = (ICwsign) new ICwsign(Nosleft).setRegistryName(Nosleft.getRegistryName());
+	public static Cwsign Nosright = new Cwsign("nosright");
+	public static ICwsign INosright = (ICwsign) new ICwsign(Nosright).setRegistryName(Nosright.getRegistryName());
+	public static Cwsign Nostraight = new Cwsign("nostraight");
+	public static ICwsign INostraight = (ICwsign) new ICwsign(Nostraight).setRegistryName(Nostraight.getRegistryName());
+	public static Cwsign Nrcar = new Cwsign("nrcar");
+	public static ICwsign INrcar = (ICwsign) new ICwsign(Nrcar).setRegistryName(Nrcar.getRegistryName());
+	public static Cwsign Overtacking = new Cwsign("overtacking");
+	public static ICwsign IOvertacking = (ICwsign) new ICwsign(Overtacking)
+			.setRegistryName(Overtacking.getRegistryName());
+	public static Cwsign Parking = new Cwsign("parking");
+	public static ICwsign IParking = (ICwsign) new ICwsign(Parking).setRegistryName(Parking.getRegistryName());
+	public static Cwsign Sstraight = new Cwsign("sstraight");
+	public static ICwsign ISstraight = (ICwsign) new ICwsign(Sstraight).setRegistryName(Sstraight.getRegistryName());
+	public static Cwsign Working2 = new Cwsign("working2");
+	public static ICwsign IWorking2 = (ICwsign) new ICwsign(Working2).setRegistryName(Working2.getRegistryName());
+	public static Cwsign Working3 = new Cwsign("working3");
+	public static ICwsign IWorking3 = (ICwsign) new ICwsign(Working3).setRegistryName(Working3.getRegistryName());
+	public static Cwsign Slrtl = new Cwsign("slrtl");
+	public static ICwsign ISlrtl = (ICwsign) new ICwsign(Slrtl).setRegistryName(Slrtl.getRegistryName());
+	public static Cwsign Slrtr = new Cwsign("slrtr");
+	public static ICwsign ISlrtr = (ICwsign) new ICwsign(Slrtr).setRegistryName(Slrtr.getRegistryName());
+	public static Cwsign Sbrtl = new Cwsign("sbrtl");
+	public static ICwsign ISbrtl = (ICwsign) new ICwsign(Sbrtl).setRegistryName(Sbrtl.getRegistryName());
+	public static Cwsign Sbrtr = new Cwsign("sbrtr");
+	public static ICwsign ISbrtr = (ICwsign) new ICwsign(Sbrtr).setRegistryName(Sbrtr.getRegistryName());
 
 	public static void preInitCommon() {
 		GameRegistry.register(Cwsign);
@@ -149,6 +187,42 @@ public class StartupCommon {
 		GameRegistry.register(IWind);
 		GameRegistry.register(Working);
 		GameRegistry.register(IWorking);
+		GameRegistry.register(Gostraight);
+		GameRegistry.register(IGostraight);
+		GameRegistry.register(High4);
+		GameRegistry.register(IHigh4);
+		GameRegistry.register(High8);
+		GameRegistry.register(IHigh8);
+		GameRegistry.register(Nlcar);
+		GameRegistry.register(INlcar);
+		GameRegistry.register(Noovertacking);
+		GameRegistry.register(INoovertacking);
+		GameRegistry.register(Nosleft);
+		GameRegistry.register(INosleft);
+		GameRegistry.register(Nosright);
+		GameRegistry.register(INosright);
+		GameRegistry.register(Nostraight);
+		GameRegistry.register(INostraight);
+		GameRegistry.register(Nrcar);
+		GameRegistry.register(INrcar);
+		GameRegistry.register(Overtacking);
+		GameRegistry.register(IOvertacking);
+		GameRegistry.register(Parking);
+		GameRegistry.register(IParking);
+		GameRegistry.register(Sstraight);
+		GameRegistry.register(ISstraight);
+		GameRegistry.register(Working2);
+		GameRegistry.register(IWorking2);
+		GameRegistry.register(Working3);
+		GameRegistry.register(IWorking3);
+		GameRegistry.register(Slrtl);
+		GameRegistry.register(ISlrtl);
+		GameRegistry.register(Slrtr);
+		GameRegistry.register(ISlrtr);
+		GameRegistry.register(Sbrtl);
+		GameRegistry.register(ISbrtl);
+		GameRegistry.register(Sbrtr);
+		GameRegistry.register(ISbrtr);
 
 	}
 }

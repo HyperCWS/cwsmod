@@ -1,0 +1,6 @@
+{
+    "parent": "cwsmod:block/sign/SIGNHorizontal",
+    "textures": {
+        "sgn": "cwsmod:blocks/sign/working2"
+    }
+}

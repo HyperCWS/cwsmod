@@ -1,0 +1,19 @@
+{
+	"variants": {
+		"facing=north": {
+			"model": "cwsmod:sign/noovertacking"
+		},
+		"facing=east": {
+			"model": "cwsmod:sign/noovertacking",
+			"y": 90
+		},
+		"facing=south": {
+			"model": "cwsmod:sign/noovertacking",
+			"y": 180
+		},
+		"facing=west": {
+			"model": "cwsmod:sign/noovertacking",
+			"y": 270
+		}
+	}
+}

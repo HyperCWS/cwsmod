@@ -1,0 +1,19 @@
+{
+	"variants": {
+		"facing=north": {
+			"model": "cwsmod:sign/nrcar"
+		},
+		"facing=east": {
+			"model": "cwsmod:sign/nrcar",
+			"y": 90
+		},
+		"facing=south": {
+			"model": "cwsmod:sign/nrcar",
+			"y": 180
+		},
+		"facing=west": {
+			"model": "cwsmod:sign/nrcar",
+			"y": 270
+		}
+	}
+}
